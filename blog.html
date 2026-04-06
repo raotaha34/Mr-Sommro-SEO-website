@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr. Sommro | SEO Blog</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  :root {
+    --primary-color: #1a73e8;
+    --bg-color: #f5f5f5;
+    --text-color: #222;
+    --card-bg: #fff;
+    --card-shadow: rgba(0,0,0,0.07);
+    --border-radius: 10px;
+    --transition-speed: 0.3s;
+  }
+
+  body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #4D8CFA;
+    color: var(--text-color);
+    line-height: 1.65;
+  }
+
+  a { 
+    text-decoration: none; 
+    color: var(--primary-color); 
+  }
+
+  
+  h1, h2, h3 {
+    font-family: 'Bebas Neue', cursive;
+    margin: 0.5em 0;
+    
+  }
+
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
+
+  .blog-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+
+  .blog-header {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  .blog-header .se {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding-top: 30px;
+    
+  }
+
+  .blog-header h2 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    line-height: 1.2;
+  }
+
+  .blog-post {
+    background: var(--card-bg);
+    padding: 25px 30px;
+    margin-bottom: 35px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px 20px var(--card-shadow);
+    transition: transform var(--transition-speed);
+  }
+
+  .blog-post:hover {
+    transform: translateY(-3px);
+  }
+
+  .bcat {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--primary-color);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+  }
+
+  .blog-post h2 {
+    font-size: 1.8rem;
+    margin: 12px 0;
+  }
+
+  .blog-post p {
+    font-size: 1rem;
+    margin-bottom: 14px;
+    line-height: 1.7;
+  }
+
+  .blog-post ul {
+    margin-left: 20px;
+    margin-bottom: 14px;
+    padding-left: 10px;
+  }
+
+  .blog-post li {
+    margin-bottom: 8px;
+  }
+
+  .read-more {
+    display: inline-block;
+    font-weight: 600;
+    color: var(--primary-color);
+    cursor: pointer;
+    margin-top: 12px;
+    transition: color var(--transition-speed);
+  }
+
+  .read-more:hover {
+    color: darkblue;
+  }
+
+  .full-content {
+    display: none;
+    overflow: hidden;
+    margin-top: 15px;
+    transition: max-height 0.4s ease-in-out, opacity var(--transition-speed);
+  }
+
+  @media screen and (max-width: 768px) {
+    .blog-header h2 { font-size: 2rem; }
+    .blog-post h2 { font-size: 1.5rem; }
+    .blog-post { padding: 20px; }
+  }
+.search-container {
+  margin: 20px auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.search-container input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(26, 115, 232, 0.3);
+}
+
+</style>
+</head>
+<body>
+
+
+  <div id="loader">
+  <div class="loader-inner">
+    <div class="loader-circle">
+    <span class="loader-ms">MS</span>
+    </div>
+    <div class="loader-text">MR SOMMRO</div>
+  </div>
+</div>
+
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+    <!-- NAVBAR -->
+<nav id="mainNav">
+<a href="#hero" class="nlogo">MR<span class="dot">.</span>SOMMRO<span class="tag">SEO</span></a>
+  <ul class="nlinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact" class="ncta">Free SEO Audit</a></li>
+  </ul>
+  <button class="nbg" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+
+<div class="blog-container">
+  <div class="blog-header">
+    <div class="se">SEO Insights</div>
+    <h2>Latest Blog Posts</h2>
+  </div>
+
+ <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search posts..." />
+  </div>
+
+<!-- Blog Post 1 -->
+<div class="blog-post">
+  <div class="bcat">Technical SEO</div>
+  <h2>Core Web Vitals 2026: The Complete Guide to Passing Google's Page Experience Update</h2>
+  <p>Google’s <strong>Core Web Vitals</strong> have officially become a ranking signal. In 2026, websites that fail to meet these performance benchmarks risk losing visibility in search results. Core Web Vitals consist of three primary metrics: <strong>LCP (Largest Contentful Paint)</strong>, <strong>INP (Interaction to Next Paint)</strong>, and <strong>CLS (Cumulative Layout Shift)</strong>. Each measures a critical aspect of user experience, from loading speed to interactivity and visual stability.</p>
+  <p>In this guide, we will cover what these metrics mean, why they matter, and how you can optimize your site to excel in each area.</p>
+
+  <!-- Full blog content sections -->
+  <section class="full-content">
+    <h2>1. Largest Contentful Paint (LCP)</h2>
+    <p><strong>What is LCP?</strong></p>
+    <p>LCP measures the time it takes for the <strong>largest visible element</strong> on a page to render. Typically, this is a hero image, a large banner, or a main block of text. Google considers a page good if <strong>LCP occurs within 2.5 seconds</strong> of loading.</p>
+
+    <p><strong>How to Improve LCP:</strong></p>
+    <ul>
+      <li><strong>Optimize images:</strong> Compress images using WebP or AVIF formats. Resize images to match display dimensions.</li>
+      <li><strong>Use lazy loading:</strong> Load offscreen images only when needed.</li>
+      <li><strong>Minimize render-blocking resources:</strong> Move CSS and JavaScript to defer loading or use asynchronous loading.</li>
+      <li><strong>Server-side optimizations:</strong> Use fast hosting, enable caching, and leverage a CDN.</li>
+    </ul>
+
+    <p><strong>Tools to Measure LCP:</strong></p>
+    <ul>
+      <li>Google PageSpeed Insights</li>
+      <li>Lighthouse in Chrome DevTools</li>
+      <li>Web Vitals Chrome Extension</li>
+    </ul>
+  </section>
+
+  <section class="full-content">
+    <h2>2. Interaction to Next Paint (INP)</h2>
+    <p><strong>What is INP?</strong></p>
+    <p>INP measures the <strong>responsiveness of a page</strong> — how quickly it reacts to user interactions such as clicks, taps, or keyboard input. A fast, interactive page reduces frustration and improves engagement.</p>
+
+    <p><strong>Improving INP:</strong></p>
+    <ul>
+      <li><strong>Optimize JavaScript execution:</strong> Break large scripts into smaller chunks and defer non-essential JS.</li>
+      <li><strong>Reduce main-thread work:</strong> Minimize long tasks that block interaction.</li>
+      <li><strong>Use web workers:</strong> Offload heavy computations from the main thread.</li>
+      <li><strong>Prioritize critical interactions:</strong> Make forms, buttons, and menus load first.</li>
+    </ul>
+
+    <p><strong>Recommended Threshold:</strong> A good INP is <strong>under 200ms</strong>.</p>
+  </section>
+
+  <section class="full-content">
+    <h2>3. Cumulative Layout Shift (CLS)</h2>
+    <p><strong>What is CLS?</strong></p>
+    <p>CLS measures the <strong>visual stability</strong> of a page. Unexpected movements of content during loading (like shifting buttons or images) can frustrate users. A low CLS score indicates that page elements remain stable as content loads.</p>
+
+    <p><strong>Fixing CLS Issues:</strong></p>
+    <ul>
+      <li><strong>Set explicit dimensions:</strong> Always define width and height for images, videos, and ads.</li>
+      <li><strong>Avoid inserting content above existing content:</strong> Especially during lazy loading or dynamic ads.</li>
+      <li><strong>Use CSS transform animations:</strong> Avoid layout-shifting animations that reflow content.</li>
+      <li><strong>Reserve space for ads or embeds:</strong> Use placeholders to prevent shifts when third-party content loads.</li>
+    </ul>
+
+    <p><strong>Recommended CLS Score:</strong> Good: ≤ 0.1</p>
+  </section>
+
+  <section class="full-content">
+    <h2>Advanced Tips for 2026</h2>
+    <ul>
+      <li><strong>Monitor continuously:</strong> Core Web Vitals can fluctuate, so use tools like Google Search Console or CrUX reports to track trends.</li>
+      <li><strong>Combine metrics with SEO strategy:</strong> Fast pages not only improve rankings but also reduce bounce rates and increase conversions.</li>
+      <li><strong>Mobile-first optimization:</strong> Most users browse on mobile. Test your site on multiple devices and networks.</li>
+      <li><strong>Progressive Web App (PWA) enhancements:</strong> PWAs can improve LCP and INP by caching key resources and providing instant interaction.</li>
+    </ul>
+  </section>
+
+  <section class="full-content">
+    <h2>Conclusion</h2>
+    <p>Passing Google’s Core Web Vitals in 2026 is <strong>not optional</strong> — it’s essential for SEO success. By focusing on <strong>LCP, INP, and CLS</strong>, you can create a website that not only ranks well but also delivers a smooth, enjoyable experience for your visitors. Start by auditing your site, implement incremental improvements, and continuously monitor your metrics to stay ahead of competitors.</p>
+
+    <p><strong>Actionable Checklist:</strong></p>
+    <ul>
+      <li>Optimize images and media for faster LCP</li>
+      <li>Minimize JavaScript blocking for better INP</li>
+      <li>Prevent layout shifts to reduce CLS</li>
+      <li>Test regularly with PageSpeed Insights</li>
+      <li>Monitor metrics through Google Search Console</li>
+    </ul>
+  </section>
+
+  <!-- Read More button -->
+  <a class="read-more">Read More →</a>
+</div>
+
+
+
+
+
+  
+  <!-- Blog Post 2 -->
+  <div class="blog-post">
+  <div class="bcat">Link Building</div>
+
+  <h2>10 White-Hat Link Building Strategies That Still Work in 2026</h2>
+
+  <!-- Excerpt (always visible) -->
+  <p>Not all backlinks are equal. Discover the <strong>10 proven strategies</strong> that build <strong>domain authority</strong> without risking a Google manual action or algorithmic penalty. In 2026, white-hat link building focuses on <strong>quality, relevance, and safe SEO practices</strong> that provide lasting results.</p>
+
+  <!-- Full Content (hidden by default) -->
+  <div class="full-content">
+
+    <h3>1. Guest Posting on Reputable Sites</h3>
+    <p>Write high-quality content for reputable websites in your niche. Ensure your content is <strong>valuable, original, and relevant</strong> to their audience. This strategy not only builds backlinks but also positions you as an authority.</p>
+
+    <h3>2. Resource Page Link Building</h3>
+    <p>Identify resource pages in your niche and suggest your <strong>useful guides or tools</strong> for inclusion. These pages are curated to provide value, making them a safe backlink source.</p>
+
+    <h3>3. Skyscraper Technique</h3>
+    <p>Analyze popular content with many backlinks, create something <strong>better and more updated</strong>, and reach out to sites linking to the original content.</p>
+
+    <h3>4. Broken Link Building</h3>
+    <p>Find broken links on authoritative websites and suggest your content as a replacement. This helps site owners while earning you a <strong>quality backlink</strong>.</p>
+
+    <h3>5. Expert Roundups and Collaborations</h3>
+    <p>Participate in interviews, roundups, or collaborations in your industry. These often include backlinks and boost your credibility.</p>
+
+    <h3>6. Create Link-Worthy Content</h3>
+    <ul>
+      <li>Comprehensive guides and tutorials</li>
+      <li>Infographics and visual content</li>
+      <li>Original research and case studies</li>
+    </ul>
+
+    <h3>7. Build Relationships in Your Industry</h3>
+    <p>Networking with influencers, bloggers, and journalists creates natural backlink opportunities. Engage in communities and build trust.</p>
+
+    <h3>8. Leverage Testimonials</h3>
+    <p>Provide testimonials for products or services. Many companies link back to your website when featuring your feedback.</p>
+
+    <h3>9. Press Releases and Media Coverage</h3>
+    <p>Use press releases to announce updates or research. Media coverage often results in high-authority backlinks.</p>
+
+    <h3>10. Internal Linking and Content Hubs</h3>
+    <p>Organize your site into <strong>content hubs</strong> and link related content strategically to improve SEO and user experience.</p>
+
+    <h3>Conclusion</h3>
+    <p>White-hat link building in 2026 is about <strong>safe, sustainable strategies</strong>. Focus on creating valuable content and building real relationships for long-term success.</p>
+
+    <h3>Actionable Checklist</h3>
+    <ul>
+      <li>Guest post on high-authority sites</li>
+      <li>Use resource page link building</li>
+      <li>Apply skyscraper technique</li>
+      <li>Fix broken links</li>
+      <li>Join expert roundups</li>
+      <li>Create link-worthy content</li>
+      <li>Build industry relationships</li>
+      <li>Use testimonials</li>
+      <li>Leverage press releases</li>
+      <li>Optimize internal linking</li>
+    </ul>
+
+  </div>
+
+  <!-- Button -->
+  <a class="read-more">Read More →</a>
+</div>
+
+  <!-- Blog Post 3 -->
+  <div class="blog-post">
+  <div class="bcat">AI SEO</div>
+
+  <h2>How to Get Featured in Google AI Overviews — A Step-by-Step 2026 Guide</h2>
+
+  <!-- Excerpt (always visible) -->
+  <p>AI Overviews are reshaping <strong>organic click-through rates</strong>. Learn how to <strong>optimize your content</strong> to be featured and stay ahead as search evolves beyond traditional rankings. In 2026, appearing in AI-generated summaries can drive significant traffic and position your brand as an authority.</p>
+
+  <!-- Full Content (hidden by default) -->
+  <div class="full-content">
+    <h3>What Are Google AI Overviews?</h3>
+    <p>Google AI Overviews are concise, AI-generated summaries of top-ranking content on search results pages. They aim to provide users with quick, comprehensive answers without needing to click through multiple pages. Getting featured in these overviews can significantly increase visibility and click-through rates.</p>
+
+    <h3>Step 1: Understand User Intent</h3>
+    <p>Before creating content, <strong>analyze search intent</strong> for your target queries. Focus on what users are truly looking for, whether it's informational, transactional, or navigational content. AI Overviews prioritize content that directly satisfies intent.</p>
+
+    <h3>Step 2: Create High-Quality, Structured Content</h3>
+    <p>Google’s AI models favor <strong>well-structured content</strong>. Use headings, bullet points, and clear paragraphs. Include:</p>
+    <ul>
+      <li>Concise answers to common questions</li>
+      <li>Relevant data, statistics, or case studies</li>
+      <li>Clear examples or step-by-step instructions</li>
+    </ul>
+
+    <h3>Step 3: Optimize for Featured Snippets</h3>
+    <p>Content optimized for featured snippets often gets picked for AI Overviews. Focus on:</p>
+    <ul>
+      <li>Directly answering questions in <strong>paragraphs of 40–60 words</strong></li>
+      <li>Using numbered or bulleted lists for procedural steps</li>
+      <li>Adding tables or charts for comparison queries</li>
+    </ul>
+
+    <h3>Step 4: Use Schema Markup and Metadata</h3>
+    <p>Implement <strong>structured data (schema.org)</strong> to help Google understand your content. Key markup types include:</p>
+    <ul>
+      <li>FAQ schema for question-based content</li>
+      <li>HowTo schema for step-by-step guides</li>
+      <li>Article schema for blog posts</li>
+    </ul>
+    <p>Proper metadata like descriptive titles and meta descriptions improves AI understanding and ranking.</p>
+
+    <h3>Step 5: Provide Authority and Trust Signals</h3>
+    <p>Google AI favors content from trustworthy sources. Enhance authority by:</p>
+    <ul>
+      <li>Linking to reputable references and studies</li>
+      <li>Including author credentials and bios</li>
+      <li>Maintaining a consistent brand presence across authoritative channels</li>
+    </ul>
+
+    <h3>Step 6: Monitor Performance and Adjust</h3>
+    <p>Track which pages are featured in AI Overviews using tools like Google Search Console or third-party SEO platforms. Continuously <strong>optimize your content</strong> based on engagement, CTR, and search trends.</p>
+
+    <h3>Conclusion</h3>
+    <p>Being featured in Google AI Overviews is a new frontier for SEO in 2026. By understanding user intent, creating high-quality structured content, optimizing for snippets, implementing schema, and building authority, your content can gain prominent visibility. <strong>Regular monitoring and refinement</strong> ensures sustained success as AI-driven search evolves.</p>
+
+    <h3>Actionable Checklist</h3>
+    <ul>
+      <li>Analyze user intent for target queries.</li>
+      <li>Create structured, high-quality content.</li>
+      <li>Optimize paragraphs, lists, and tables for featured snippets.</li>
+      <li>Implement schema markup and optimize metadata.</li>
+      <li>Build authority with credible references and author credentials.</li>
+      <li>Monitor AI Overview placements and refine content regularly.</li>
+    </ul>
+  </div>
+
+  <!-- Button -->
+  <a class="read-more">Read More →</a>
+</div>
+
+  <!-- Blog Post 4 -->
+  
+  <div class="blog-post">
+  <div class="bcat">Local SEO</div>
+
+  <h2>How to Rank in Google Maps: The 2026 Local SEO Playbook for Pakistani Businesses</h2>
+
+  <!-- Excerpt (always visible) -->
+  <p>Local SEO is the <strong>fastest way to become visible to nearby customers</strong>. Our step-by-step guide will show Pakistani businesses how to dominate the <strong>Google Maps 3-pack</strong> and attract more local clients in 2026.</p>
+
+  <!-- Full Content (hidden by default) -->
+  <div class="full-content">
+    <h3>Step 1: Optimize Your Google Business Profile</h3>
+    <p>Your <strong>Google Business Profile (GBP)</strong> is the foundation of local SEO. Ensure you:</p>
+    <ul>
+      <li>Complete all profile fields with accurate business information.</li>
+      <li>Use a clear, high-quality logo and images of your business.</li>
+      <li>Select the correct business categories relevant to your services.</li>
+      <li>Include a compelling business description with local keywords.</li>
+    </ul>
+
+    <h3>Step 2: Collect Positive Customer Reviews</h3>
+    <p>Customer reviews influence rankings and click-through rates. Encourage satisfied clients to leave reviews, and <strong>respond promptly to all feedback</strong> to build trust.</p>
+
+    <h3>Step 3: Local Keyword Research</h3>
+    <p>Identify keywords with strong local intent. Focus on queries like "<strong>service + city</strong>" or "<strong>product + near me</strong>". Use tools such as Google Keyword Planner and Ahrefs to find opportunities.</p>
+
+    <h3>Step 4: On-Page Optimization for Local SEO</h3>
+    <p>Optimize your website for local searches:</p>
+    <ul>
+      <li>Include your city and region in page titles, headings, and meta descriptions.</li>
+      <li>Add a local schema markup for business address and contact info.</li>
+      <li>Create a dedicated <strong>location page</strong> for each branch if you have multiple locations.</li>
+    </ul>
+
+    <h3>Step 5: Build Local Citations</h3>
+    <p>Submit your business to authoritative Pakistani directories and local platforms like:</p>
+    <ul>
+      <li>PakBiz</li>
+      <li>OLX Pakistan (for certain categories)</li>
+      <li>Local Chamber of Commerce websites</li>
+    </ul>
+    <p>Consistency of your <strong>NAP (Name, Address, Phone)</strong> across platforms is critical for ranking.</p>
+
+    <h3>Step 6: Generate Local Backlinks</h3>
+    <p>Earn links from Pakistani blogs, news sites, and local industry portals. High-quality local backlinks signal authority to Google and improve your Maps ranking.</p>
+
+    <h3>Step 7: Use Google Maps Posts and Updates</h3>
+    <p>Keep your GBP active by posting offers, events, or updates. Frequent activity improves engagement and signals relevancy to Google Maps.</p>
+
+    <h3>Step 8: Monitor and Track Performance</h3>
+    <p>Use tools like Google Analytics, Google Business Profile Insights, and local SEO tools to monitor clicks, calls, and directions. <strong>Adjust strategies</strong> based on performance trends.</p>
+
+    <h3>Conclusion</h3>
+    <p>Ranking in Google Maps 3-pack is achievable for Pakistani businesses by optimizing your Google Business Profile, leveraging local keywords, building citations and backlinks, and staying active. Focus on providing value to your local audience, and 2026 can be a year of significant local growth.</p>
+
+    <h3>Actionable Checklist</h3>
+    <ul>
+      <li>Complete and optimize your Google Business Profile.</li>
+      <li>Collect and respond to positive customer reviews.</li>
+      <li>Perform local keyword research for your city.</li>
+      <li>Optimize website pages for local search and schema.</li>
+      <li>Build consistent local citations across directories.</li>
+      <li>Earn high-quality local backlinks.</li>
+      <li>Post regularly on Google Maps and engage users.</li>
+      <li>Track performance and refine strategies.</li>
+    </ul>
+  </div>
+
+  <!-- Read More Button -->
+  <a class="read-more">Read More →</a>
+</div>
+
+  <!-- Blog Post 5 -->
+  <div class="blog-post">
+  <div class="bcat">Keyword Research</div>
+
+  <h2>Keyword Research in 2026: How to Find High-Intent Terms That Actually Convert</h2>
+
+  <!-- Excerpt (always visible) -->
+  <p>Ranking for traffic is not enough — you need to rank for <strong>terms that bring buyers</strong>. This guide walks through our complete <strong>keyword research framework</strong> for maximum ROI in 2026, focusing on high-intent keywords that drive conversions.</p>
+
+  <!-- Full Content (hidden by default) -->
+  <div class="full-content">
+    <h3>Step 1: Understand Search Intent</h3>
+    <p>Before identifying keywords, understand the <strong>intent behind searches</strong>. High-intent queries often indicate a user is ready to purchase or engage. Common types include:</p>
+    <ul>
+      <li><strong>Informational:</strong> Users seeking knowledge.</li>
+      <li><strong>Transactional:</strong> Users ready to buy.</li>
+      <li><strong>Commercial Investigation:</strong> Users comparing options.</li>
+    </ul>
+    <p>Focus primarily on transactional and commercial investigation queries for higher ROI.</p>
+
+    <h3>Step 2: Brainstorm Seed Keywords</h3>
+    <p>Start with core topics related to your business. Think of the main products, services, or problems your audience is searching for. Use tools like Google Autocomplete, AnswerThePublic, and SEMrush to expand seed keywords.</p>
+
+    <h3>Step 3: Analyze Competitor Keywords</h3>
+    <p>Identify the keywords your competitors rank for and which generate traffic. Tools like Ahrefs, SEMrush, and Moz allow you to:</p>
+    <ul>
+      <li>Discover high-performing competitor pages.</li>
+      <li>Analyze their organic and paid keyword strategies.</li>
+      <li>Identify gaps where you can rank with less competition.</li>
+    </ul>
+
+    <h3>Step 4: Evaluate Keyword Metrics</h3>
+    <p>Focus on the following metrics when selecting keywords:</p>
+    <ul>
+      <li><strong>Search Volume:</strong> Potential traffic opportunity.</li>
+      <li><strong>Keyword Difficulty:</strong> Effort required to rank.</li>
+      <li><strong>Commercial Intent:</strong> Likelihood to convert.</li>
+      <li><strong>Click-Through Potential:</strong> Consider SERP features and snippet presence.</li>
+    </ul>
+
+    <h3>Step 5: Prioritize High-Intent Keywords</h3>
+    <p>Not all keywords are created equal. Prioritize those with:</p>
+    <ul>
+      <li>High commercial or transactional intent.</li>
+      <li>Moderate competition for realistic ranking opportunities.</li>
+      <li>Alignment with your business goals and offerings.</li>
+    </ul>
+
+    <h3>Step 6: Map Keywords to Content</h3>
+    <p>Organize selected keywords into a <strong>content strategy</strong>. Assign primary keywords to main pages and secondary keywords to supporting blog posts, FAQs, or guides. This creates a coherent SEO architecture and improves topical authority.</p>
+
+    <h3>Step 7: Monitor and Refine</h3>
+    <p>Keyword performance changes over time. Use tools like Google Search Console and analytics platforms to:</p>
+    <ul>
+      <li>Track rankings and clicks.</li>
+      <li>Identify new high-intent opportunities.</li>
+      <li>Update and optimize content for evolving search behavior.</li>
+    </ul>
+
+    <h3>Conclusion</h3>
+    <p>Keyword research in 2026 is about <strong>targeting high-intent terms that convert</strong> rather than chasing raw traffic. By understanding intent, evaluating metrics, and strategically mapping keywords to content, you maximize ROI and attract buyers, not just visitors.</p>
+
+    <h3>Actionable Checklist</h3>
+    <ul>
+      <li>Identify user intent for your target queries.</li>
+      <li>Brainstorm seed keywords and expand using tools.</li>
+      <li>Analyze competitor keywords and gaps.</li>
+      <li>Evaluate search volume, difficulty, and commercial intent.</li>
+      <li>Prioritize high-intent, realistic keywords.</li>
+      <li>Map keywords to specific pages and content clusters.</li>
+      <li>Monitor performance and update keywords regularly.</li>
+    </ul>
+  </div>
+
+  <!-- Read More Button -->
+  <a class="read-more">Read More →</a>
+</div>
+
+  <!-- Blog Post 6 -->
+ <div class="blog-post">
+  <div class="bcat">On-Page SEO</div>
+
+  <h2>The On-Page SEO Checklist Every Pakistani Business Website Needs in 2026</h2>
+
+  <!-- Excerpt (always visible) -->
+  <p>A fully optimized page does more than just rank — it <strong>converts</strong>. Run through our <strong>30-point on-page SEO checklist</strong> to maximize both your <strong>visibility</strong> and <strong>conversion rate</strong> in 2026, specifically for Pakistani business websites.</p>
+
+  <!-- Full Content (hidden by default) -->
+  <div class="full-content">
+    <h3>1. Keyword Optimization</h3>
+    <ul>
+      <li>Include primary keyword in page title.</li>
+      <li>Use keywords naturally in headings (H1, H2, H3).</li>
+      <li>Include keyword in first 100 words of content.</li>
+      <li>Use semantic and related keywords throughout the page.</li>
+      <li>Optimize meta description with primary keyword.</li>
+    </ul>
+
+    <h3>2. URL & Technical SEO</h3>
+    <ul>
+      <li>Create clean, descriptive URLs.</li>
+      <li>Use hyphens to separate words.</li>
+      <li>Ensure mobile-friendly and responsive design.</li>
+      <li>Enable HTTPS for security.</li>
+      <li>Check page load speed and optimize performance.</li>
+    </ul>
+
+    <h3>3. Content Optimization</h3>
+    <ul>
+      <li>Provide comprehensive, high-quality content.</li>
+      <li>Use short paragraphs and bullet points for readability.</li>
+      <li>Include internal links to relevant pages.</li>
+      <li>Use outbound links to authoritative sources.</li>
+      <li>Include engaging multimedia (images, videos, infographics).</li>
+    </ul>
+
+    <h3>4. Images & Media</h3>
+    <ul>
+      <li>Compress images for faster loading.</li>
+      <li>Use descriptive file names with keywords.</li>
+      <li>Include alt text for accessibility and SEO.</li>
+      <li>Implement lazy loading for offscreen images.</li>
+      <li>Ensure responsive images for mobile devices.</li>
+    </ul>
+
+    <h3>5. User Experience & Engagement</h3>
+    <ul>
+      <li>Include clear call-to-actions (CTAs).</li>
+      <li>Use easy-to-read fonts and formatting.</li>
+      <li>Optimize navigation and internal linking structure.</li>
+      <li>Reduce pop-ups or intrusive interstitials.</li>
+      <li>Improve dwell time with engaging content.</li>
+    </ul>
+
+    <h3>6. Schema & Structured Data</h3>
+    <ul>
+      <li>Implement Article, FAQ, or Product schema where applicable.</li>
+      <li>Add local business schema for Pakistani businesses.</li>
+      <li>Ensure structured data passes Google Rich Results Test.</li>
+      <li>Mark up events or services if applicable.</li>
+      <li>Keep schema updated with accurate business info.</li>
+    </ul>
+
+    <h3>7. Technical Enhancements</h3>
+    <ul>
+      <li>Check for crawl errors using Google Search Console.</li>
+      <li>Fix broken links internally and externally.</li>
+      <li>Enable canonical URLs to avoid duplicate content.</li>
+      <li>Implement XML sitemap and robots.txt properly.</li>
+      <li>Regularly audit page speed using Lighthouse or PageSpeed Insights.</li>
+    </ul>
+
+    <h3>Conclusion</h3>
+    <p>Following this 30-point <strong>on-page SEO checklist</strong> ensures your Pakistani business website is optimized for both search engines and user experience in 2026. Focus on quality content, technical performance, and structured SEO practices to maximize <strong>visibility and conversions</strong>.</p>
+
+    <h3>Actionable Takeaways</h3>
+    <ul>
+      <li>Audit every page against this checklist regularly.</li>
+      <li>Prioritize pages that generate the most traffic or revenue.</li>
+      <li>Continuously optimize images, speed, and user engagement.</li>
+      <li>Use schema markup to enhance search results appearance.</li>
+      <li>Track results using Google Analytics and Search Console.</li>
+    </ul>
+  </div>
+
+  <!-- Read More Button -->
+  <a class="read-more">Read More →</a>
+</div>
+
+
+
+</div>
+<script>
+
+  document.querySelectorAll('.read-more').forEach(button => {
+    button.addEventListener('click', function() {
+      const blogPost = this.closest('.blog-post');
+      const fullSections = blogPost.querySelectorAll('.full-content');
+      fullSections.forEach(section => section.style.display = section.style.display === 'block' ? 'none' : 'block');
+      this.textContent = this.textContent.includes('Read More') ? 'Show Less ↑' : 'Read More →';
+    });
+  });
+
+
+  const searchInput = document.getElementById('searchInput');
+  searchInput.addEventListener('keyup', function() {
+    const query = this.value.toLowerCase();
+    document.querySelectorAll('.blog-post').forEach(post => {
+      const title = post.querySelector('h2').textContent.toLowerCase();
+      const content = post.querySelector('p').textContent.toLowerCase();
+      if (title.includes(query) || content.includes(query)) {
+        post.style.display = 'block';
+      } else {
+        post.style.display = 'none';
+      }
+    });
+  });
+
+// cursor
+const dot = document.querySelector('.cursor-dot');
+const ring = document.querySelector('.cursor-ring');
+
+let mouse = { x: 0, y: 0 };
+let ringPos = { x: 0, y: 0 };
+const ease = 0.15; // smaller = slower, smoother lag
+
+// Track mouse instantly
+document.addEventListener('mousemove', e => {
+  mouse.x = e.clientX;
+  mouse.y = e.clientY;
+
+  // Move dot instantly
+  dot.style.left = mouse.x + 'px';
+  dot.style.top = mouse.y + 'px';
+});
+  
+// Animate ring with easing
+function animate() {
+  ringPos.x += (mouse.x - ringPos.x) * ease;
+  ringPos.y += (mouse.y - ringPos.y) * ease;
+  
+  ring.style.left = ringPos.x + 'px';
+  ring.style.top = ringPos.y + 'px';
+  
+  requestAnimationFrame(animate);
+}
+
+animate();
+// loader 
+ // Hide loader after page fully loads
+  window.addEventListener("load", function() {
+    const loader = document.getElementById('loader');
+    setTimeout(() => {
+        loader.style.opacity = '0';
+        loader.style.transition = 'opacity 0.5s ease';
+        setTimeout(() => loader.style.display = 'none', 500);
+    }, 1000); // loader stays visible for 5 seconds
+});
+
+    setTimeout(() => {
+    const loader = document.getElementById('loader');
+    loader.style.opacity = '0';
+    loader.style.transition = 'opacity 0.5s ease';
+    setTimeout(()=> loader.style.display = 'none', 500);
+  }, 1000); // 3000ms = 3 seconds
+
+/* SELECT FIX */
+document.getElementById('fs').addEventListener('change',function(){this.classList.add('fl')});
+
+/* SMOOTH SCROLL */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){
+      e.preventDefault();
+      t.scrollIntoView({behavior:'smooth'});
+    }
+  });
+});
+</script>
+
+</body>
+</html>
