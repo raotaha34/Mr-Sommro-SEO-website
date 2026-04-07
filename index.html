@@ -9,9 +9,35 @@
 <meta name="description" content="Mr. Sommro is Pakistan's leading SEO agency. We deliver On-Page SEO, Technical SEO, Local SEO, Link Building and Content Marketing that generates real revenue. 250+ clients. 95% success rate.">
 <meta name="keywords" content="SEO agency Pakistan, On-Page SEO, Technical SEO, Link Building, Local SEO, Content Marketing, SEO services Karachi, Mr Sommro">
 <meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0a0a0f">
 <link rel="canonical" href="https://www.mrsommro.com/">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Mr. Sommro SEO Agency","description":"Expert SEO services — On-Page, Technical, Local, Link Building, Content Marketing.","url":"https://www.mrsommro.com","email":"info@mrsommro.com","telephone":"+92-300-123-4567","address":{"@type":"PostalAddress","addressLocality":"Karachi","addressCountry":"PK"}}</script>
 <link rel="stylesheet" href="style.css">
+<style>
+  /* Additional dark theme enhancements */
+  .hero-particles {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .hero-particles span {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: particle-float 15s infinite;
+    box-shadow: 0 0 10px var(--accent);
+  }
+  @keyframes particle-float {
+    0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+    10% { opacity: 0.3; }
+    90% { opacity: 0.3; }
+    100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+  }
+</style>
   <!-- EmailJS Library -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
@@ -65,6 +91,7 @@
 <section class="hero" id="hero">
   <div id="heroLines" aria-hidden="true"></div>
   <div class="hblob" aria-hidden="true"></div>
+  <div class="hero-particles" aria-hidden="true" id="heroParticles"></div>
   <div class="hcnt">
     <div class="hpill"><span class="pd"></span>Results-Driven SEO & Reddit Growth That Actually Works &middot; Est. 2016</div>
     <h1 class="hh1">
@@ -119,7 +146,10 @@
 <section id="about">
   <div class="abg">
     <div class="abvis rv fl">
-      <div class="abbox"><div class="abin">MS</div></div>
+      <div class="abbox">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=750&fit=crop" alt="SEO Analytics Dashboard" style="width:100%;height:100%;object-fit:cover;border-radius:24px;opacity:0.9;">
+        <div class="abin">MS</div>
+      </div>
       <div class="abbdg"><div class="abbdg-n">8+</div><div class="abbdg-l">Years of SEO</div></div>
     </div>
     <div class="rv fr">
@@ -322,7 +352,7 @@ We keep communication clear and straightforward
   <div class="blg">
 
     <article class="bc rv fl" itemscope itemtype="https://schema.org/BlogPosting">
-      <div class="bth bt1">
+      <div class="bth bt1" style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop');background-size:cover;background-position:center;">
         <div class="bth-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
         <span class="bcat">Technical SEO</span>
       </div>
@@ -335,7 +365,7 @@ We keep communication clear and straightforward
     </article>
 
     <article class="bc rv" itemscope itemtype="https://schema.org/BlogPosting">
-      <div class="bth bt2">
+      <div class="bth bt2" style="background-image:url('https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=400&h=200&fit=crop');background-size:cover;background-position:center;">
         <div class="bth-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></div>
         <span class="bcat">Link Building</span>
       </div>
@@ -348,7 +378,7 @@ We keep communication clear and straightforward
     </article>
 
     <article class="bc rv fr" itemscope itemtype="https://schema.org/BlogPosting">
-      <div class="bth bt3">
+      <div class="bth bt3" style="background-image:url('https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=200&fit=crop');background-size:cover;background-position:center;">
         <div class="bth-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
         <span class="bcat">AI SEO</span>
       </div>
@@ -361,7 +391,7 @@ We keep communication clear and straightforward
     </article>
 
     <article class="bc rv fl" itemscope itemtype="https://schema.org/BlogPosting">
-      <div class="bth bt4">
+      <div class="bth bt4" style="background-image:url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=200&fit=crop');background-size:cover;background-position:center;">
         <div class="bth-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
         <span class="bcat">Local SEO</span>
       </div>
@@ -374,7 +404,7 @@ We keep communication clear and straightforward
     </article>
 
     <article class="bc rv" itemscope itemtype="https://schema.org/BlogPosting">
-      <div class="bth bt5">
+      <div class="bth bt5" style="background-image:url('https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=200&fit=crop');background-size:cover;background-position:center;">
         <div class="bth-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
         <span class="bcat">Keyword Research</span>
       </div>
@@ -387,7 +417,7 @@ We keep communication clear and straightforward
     </article>
 
     <article class="bc rv fr" itemscope itemtype="https://schema.org/BlogPosting">
-      <div class="bth bt6">
+      <div class="bth bt6" style="background-image:url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=200&fit=crop');background-size:cover;background-position:center;">
         <div class="bth-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
         <span class="bcat">On-Page SEO</span>
       </div>
@@ -439,7 +469,7 @@ We keep communication clear and straightforward
 </section>
 
 <!-- CLIENTS -->
-<section id="clients" style="padding:80px 60px">
+<section id="clients" style="padding:80px 0px">
   <div style="text-align:center;margin-bottom:48px" class="rv">
     <div class="se" style="justify-content:center">Trusted By</div>
     <h2 class="st" style="font-size:clamp(30px,4vw,52px)">Brands We Have <em>Helped Grow</em></h2>
@@ -692,8 +722,18 @@ const hl=document.getElementById('heroLines');
 hl.style.cssText='position:absolute;inset:0;display:flex;justify-content:space-between;pointer-events:none;z-index:1';
 for(let i=0;i<12;i++){
   const s=document.createElement('span');
-  s.style.cssText='display:block;width:1px;background:linear-gradient(180deg,transparent,rgba(21,87,232,.05) 30%,rgba(21,87,232,.05) 70%,transparent)';
+  s.style.cssText='display:block;width:1px;background:linear-gradient(180deg,transparent,rgba(0,212,255,.08) 30%,rgba(0,212,255,.08) 70%,transparent)';
   hl.appendChild(s);
+}
+
+/* HERO PARTICLES */
+const particlesContainer=document.getElementById('heroParticles');
+for(let i=0;i<20;i++){
+  const p=document.createElement('span');
+  p.style.left=Math.random()*100+'%';
+  p.style.animationDelay=Math.random()*15+'s';
+  p.style.animationDuration=(10+Math.random()*10)+'s';
+  particlesContainer.appendChild(p);
 }
 
 /* MARQUEE */
