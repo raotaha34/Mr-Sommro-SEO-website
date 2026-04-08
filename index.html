@@ -66,7 +66,7 @@
 <div class="mnav" id="mobNav">
   <a href="#hero"         onclick="closeMob()">Home</a>
   <a href="#about"        onclick="closeMob()">About</a>
-  <a href="#services"     onclick="closeMob()">Services</a>
+  <a href="services.html" onclick="closeMob()">Services</a>
   <a href="#process"      onclick="closeMob()">Process</a>
   <a href="#blog"         onclick="closeMob()">Blog</a>
   <a href="#testimonials" onclick="closeMob()">Reviews</a>
@@ -78,12 +78,13 @@
 <a href="#hero" class="nlogo">MR<span class="dot">.</span>SOMMRO<span class="tag">SEO</span></a>
   <ul class="nlinks">
     <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
+    <li><a href="services.html">Services</a></li>
     <li><a href="#process">Process</a></li>
     <li><a href="#blog">Blog</a></li>
     <li><a href="#testimonials">Reviews</a></li>
     <li><a href="#contact" class="ncta">Free SEO Audit</a></li>
   </ul>
+
   <button class="nbg" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
@@ -106,8 +107,9 @@
     </p>
     <div class="hacts">
       <a href="#contact" class="bblu">Get Free SEO Audit</a>
-      <a href="#services" class="bout">View Services</a>
+      <a href="services.html" class="bout">View Services</a>
     </div>
+
     <!-- 4 social icons below hero CTAs -->
     <div class="hero-soc">
       <div class="soc-row">
@@ -147,7 +149,7 @@
   <div class="abg">
     <div class="abvis rv fl">
       <div class="abbox">
-        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=750&fit=crop" alt="SEO Analytics Dashboard" style="width:100%;height:100%;object-fit:cover;border-radius:24px;opacity:0.9;">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=750&fit=crop" alt="SEO Analytics Dashboard" style="width:100%;height:100%;object-fit:cover;object-position:center;border-radius:24px;opacity:0.9;display:block;">
         <div class="abin">MS</div>
       </div>
       <div class="abbdg"><div class="abbdg-n">8+</div><div class="abbdg-l">Years of SEO</div></div>
@@ -179,116 +181,7 @@ We keep communication clear and straightforward
       </p>
     </div>
   </div>
-</section>
-
-<!-- EMAIL BAND -->
-<div class="eband">
-  <div class="ebinn rv">
-    <div class="se" style="justify-content:center;color:rgba(255,255,255,.7)">Free SEO Proposal</div>
-    <div class="ebtit">Ready to Rank #1 on Google?</div>
-    <p class="ebsub">Enter your email and we will send you a personalised, no-obligation SEO audit — showing exactly what is holding your site back from page one. Trusted by 250+ businesses.</p>
-    <div class="ebfrm">
-      <input type="email" class="ebinp" id="ebEmail" placeholder="Enter your email address or website URL">
-      <button class="ebbtn" onclick="handleEB()">Get Free Audit</button>
-    </div>
-    <div id="ebMsg" style="display:none;font-size:13px;margin-top:12px;font-weight:600"></div>
-    <p class="ebnote">No spam. No commitment. Your data is safe. Trusted by 100+ businesses across Pakistan, the UK and UAE.</p>
-  </div>
-</div>
-
-<!-- SERVICES -->
-<section id="services">
-  <div class="svhd rv">
-    <div><div class="se">What We Do</div><h2 class="st">Our SEO <em>Services</em></h2></div>
-    <p class="svhdr">Comprehensive, customised SEO solutions built around your business goals — not generic templates.</p>
-  </div>
-  <div class="svg">
-
-    <!-- 01 On-Page SEO -->
-    <article class="svc rv" itemscope itemtype="https://schema.org/Service">
-      <span class="svn">01</span>
-      <div class="svic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-      <h3 class="svnm" itemprop="name">Reddit Post Removal & Deindexing</h3>
-      <p class="svd" itemprop="description">Remove or suppress harmful Reddit content to protect your brand visibility.</p>
-      <a href="#contact" class="svlk">Get Started &rarr;</a>
-    </article>
-
-    <!-- 02 Technical SEO -->
-    <article class="svc rv" itemscope itemtype="https://schema.org/Service">
-      <span class="svn">02</span>
-      <div class="svic"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-      <h3 class="svnm" itemprop="name">Reputation Management (ORM)</h3>
-      <p class="svd" itemprop="description">Improve and control your online reputation by promoting positive search results. We suppress
-         negative content and strengthen your brand image with strategic SEO and content placement.</p>
-      <a href="#contact" class="svlk">Get Started &rarr;</a>
-    </article>
-
-    <!-- 03 Local SEO -->
-    <article class="svc rv" itemscope itemtype="https://schema.org/Service">
-      <span class="svn">03</span>
-      <div class="svic"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-      <h3 class="svnm" itemprop="name">High Authority Backlinks</h3>
-      <p class="svd" itemprop="description">Build strong backlinks from trusted, high-authority websites to boost your rankings. This increases domain 
-        credibility and drives consistent organic traffic.</p><a href="#contact" class="svlk">Get Started &rarr;</a>
-    </article>
-
-    <!-- 04 Content Marketing -->
-    <article class="svc rv" itemscope itemtype="https://schema.org/Service">
-      <span class="svn">04</span>
-      <div class="svic"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
-      <h3 class="svnm" itemprop="name">Reddit Traffic Growth</h3>
-      <p class="svd" itemprop="description">Drive targeted traffic from Reddit through strategic posting and
-         community engagement. We focus on relevant subreddits to generate authentic users and higher conversions.</p> <a href="#contact" class="svlk">Get Started &rarr;</a>
-    </article>
-
-    <!-- 05 Link Building -->
-    <article class="svc rv" itemscope itemtype="https://schema.org/Service">
-      <span class="svn">05</span>
-      <div class="svic"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></div>
-      <h3 class="svnm" itemprop="name">Link Building</h3>
-      <p class="svd" itemprop="description">Build a powerful white-hat backlink profile with high-DA editorial links, niche guest posts, digital
-         PR campaigns and competitor link-gap analysis that sustainably boosts your domain authority and search rankings.</p>
-      <a href="#contact" class="svlk">Get Started &rarr;</a>
-    </article>
-
-    <!-- 06 eCommerce SEO -->
-    <article class="svc rv" itemscope itemtype="https://schema.org/Service">
-      <span class="svn">06</span>
-      <div class="svic"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></div>
-      <h3 class="svnm" itemprop="name">eCommerce SEO</h3>
-      <p class="svd" itemprop="description">Specialised SEO for Shopify, WooCommerce and Magento stores. We optimise product pages, category architecture, structured data and site performance to turn organic traffic directly into sales and revenue.</p>
-      <a href="#contact" class="svlk">Get Started &rarr;</a>
-    </article>
-
-    <!-- 07 AI SEO -->
-    <article class="svc rv" itemscope itemtype="https://schema.org/Service">
-      <span class="svn">07</span>
-      <div class="svic"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 110 20 10 10 0 010-20z"/><path d="M12 6v6l4 2"/></svg></div>
-      <h3 class="svnm" itemprop="name">AI SEO &amp; GEO</h3>
-      <p class="svd" itemprop="description">Future-proof your visibility. We optimise your content to appear in Google AI Overviews, ChatGPT, Perplexity and voice search results — going beyond traditional SEO to reach users wherever they search in 2026.</p>
-      <a href="#contact" class="svlk">Get Started &rarr;</a>
-    </article>
-
-    <!-- 08 SEO Audits -->
-    <article class="svc rv" itemscope itemtype="https://schema.org/Service">
-      <span class="svn">08</span>
-      <div class="svic"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
-      <h3 class="svnm" itemprop="name">SEO Audits &amp; Strategy</h3>
-      <p class="svd" itemprop="description">A comprehensive 150-point SEO audit covering technical issues, on-page quality, backlink profile, keyword gaps and competitor analysis — delivered with a prioritised, actionable roadmap and clear quick wins.</p>
-      <a href="#contact" class="svlk">Get Started &rarr;</a>
-    </article>
-
-    <!-- 09 Reporting -->
-    <article class="svc rv" itemscope itemtype="https://schema.org/Service">
-      <span class="svn">09</span>
-      <div class="svic"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-      <h3 class="svnm" itemprop="name">SEO Reporting &amp; Analytics</h3>
-      <p class="svd" itemprop="description">Monthly dashboards with full transparency — GA4 setup, Search Console insights, rank tracking, organic traffic trends, conversion attribution and ROI calculation — so you always know exactly what your investment is delivering.</p>
-      <a href="#contact" class="svlk">Get Started &rarr;</a>
-    </article>
-
-  </div>
-</section>
+  </section>
 
 <!-- WHY US -->
 <div class="whys">
@@ -747,12 +640,28 @@ const mq=document.getElementById('mqTrack');
 });
 
 /* CLIENT LOGOS */
-const cls=['TechSpark','NexusGroup','BloomBoutique','FinanceWiz','ZB Clinic','RetailPlus','DigitalEdge','GrowthHQ','SkyMedia','RankBoost','ClickCo','WebElite','ProRank','SearchX'];
+const cls=['Google','Amazon','Netflix','Microsoft','LinkedIn','Apple','Twitter','YouTube','eBay','Instagram'];
 const ct=document.getElementById('clTrack');
 [...cls,...cls,...cls].forEach(n=>{
   const el=document.createElement('div');
   el.className='cll';
-  el.textContent=n;
+  const logoUrls = {
+    'Google': 'google-removebg-preview.png',
+    'Amazon': 'amazon-removebg-preview.png',
+    'Netflix': 'Netflix-Logo-removebg-preview.png',
+    'Microsoft': 'microsoft-removebg-preview.png',
+    'LinkedIn': 'Linkedin-logo-tumb-removebg-preview.png',
+    'Apple': 'Apple-Logo-removebg-preview.png',
+    'Twitter': 'Twitter-Logo-thumb.png',
+    'YouTube': 'youtube-removebg-preview.png',
+    'eBay': 'ebay-removebg-preview.png',
+    'Instagram': 'instagram-removebg-preview.png'
+  };
+  if (logoUrls[n]) {
+    el.innerHTML = `<img src="${logoUrls[n]}" alt="${n}" style="width:100px;height:100px;object-fit:contain;background:transparent;">`;
+  } else {
+    el.textContent = n;
+  }
   ct.appendChild(el);
 });
 
