@@ -13,6 +13,12 @@
 <link rel="canonical" href="https://www.mrsommro.com/">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Mr. Sommro SEO Agency","description":"Expert SEO services — On-Page, Technical, Local, Link Building, Content Marketing.","url":"https://www.mrsommro.com","email":"info@mrsommro.com","telephone":"+92-300-123-4567","address":{"@type":"PostalAddress","addressLocality":"Karachi","addressCountry":"PK"}}</script>
 <link rel="stylesheet" href="style.css">
+  <!-- EmailJS Library -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
   /* Additional dark theme enhancements */
   .hero-particles {
@@ -38,12 +44,6 @@
     100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
   }
 </style>
-  <!-- EmailJS Library -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
 <!-- MR SOMMRO Loader -->
@@ -68,7 +68,7 @@
   <a href="#about"        onclick="closeMob()">About</a>
   <a href="services.html" onclick="closeMob()">Services</a>
   <a href="#process"      onclick="closeMob()">Process</a>
-  <a href="#blog"         onclick="closeMob()">Blog</a>
+  <a href="blog.html"         onclick="closeMob()">Blog</a>
   <a href="#testimonials" onclick="closeMob()">Reviews</a>
   <a href="#contact"      onclick="closeMob()">Contact</a>
 </div>
@@ -80,7 +80,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="services.html">Services</a></li>
     <li><a href="#process">Process</a></li>
-    <li><a href="#blog">Blog</a></li>
+    <li><a href="blog.html">Blog</a></li>
     <li><a href="#testimonials">Reviews</a></li>
     <li><a href="#contact" class="ncta">Free SEO Audit</a></li>
   </ul>
@@ -182,6 +182,21 @@ We keep communication clear and straightforward
     </div>
   </div>
   </section>
+  
+<!-- EMAIL BAND -->
+<div class="eband">
+  <div class="ebinn rv">
+    <div class="se" style="justify-content:center;color:rgba(255,255,255,.7)">Free SEO Proposal</div>
+    <div class="ebtit">Ready to Rank #1 on Google?</div>
+    <p class="ebsub">Enter your email and we will send you a personalised, no-obligation SEO audit — showing exactly what is holding your site back from page one. Trusted by 250+ businesses.</p>
+    <div class="ebfrm">
+      <input type="email" class="ebinp" id="ebEmail" placeholder="Enter your email address or website URL">
+      <button class="ebbtn" onclick="handleEB()">Get Free Audit</button>
+    </div>
+    <div id="ebMsg" style="display:none;font-size:13px;margin-top:12px;font-weight:600"></div>
+    <p class="ebnote">No spam. No commitment. Your data is safe. Trusted by 100+ businesses across Pakistan, the UK and UAE.</p>
+  </div>
+</div>
 
 <!-- WHY US -->
 <div class="whys">
@@ -234,98 +249,8 @@ We keep communication clear and straightforward
   </div>
 </section>
 
-<!-- BLOG — 6 posts -->
-<section id="blog">
-  <div style="max-width:1200px;margin:0 auto">
-    <div class="rv" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:14px">
-      <div><div class="se">SEO Insights</div><h2 class="st">Latest <em>Blog</em> Posts</h2></div>
-      <a href="blog.html" class="bout">View All Articles &rarr;</a>
-    </div>
-  </div>
-  <div class="blg">
 
-    <article class="bc rv fl" itemscope itemtype="https://schema.org/BlogPosting">
-      <div class="bth bt1" style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop');background-size:cover;background-position:center;">
-        <div class="bth-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-        <span class="bcat">Technical SEO</span>
-      </div>
-      <div class="bbd">
-        <div class="bmt"><span>Jan 20, 2026</span><span>6 min read</span></div>
-        <h2 class="btl" itemprop="headline">Core Web Vitals 2026: The Complete Guide to Passing Google's Page Experience Update</h2>
-        <p class="bex">Google's Core Web Vitals are a confirmed ranking signal. Here is exactly how to improve your LCP, INP and CLS scores to outrank your competitors this year.</p>
-        <a href="#blog" class="brd">Read Article &rarr;</a>
-      </div>
-    </article>
-
-    <article class="bc rv" itemscope itemtype="https://schema.org/BlogPosting">
-      <div class="bth bt2" style="background-image:url('https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=400&h=200&fit=crop');background-size:cover;background-position:center;">
-        <div class="bth-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></div>
-        <span class="bcat">Link Building</span>
-      </div>
-      <div class="bbd">
-        <div class="bmt"><span>Jan 12, 2026</span><span>8 min read</span></div>
-        <h2 class="btl" itemprop="headline">10 White-Hat Link Building Strategies That Still Work in 2026</h2>
-        <p class="bex">Not all backlinks are equal. Discover the 10 proven strategies that build domain authority without risking a Google manual action or algorithmic penalty.</p>
-        <a href="blog.html" class="brd">Read Article &rarr;</a>
-      </div>
-    </article>
-
-    <article class="bc rv fr" itemscope itemtype="https://schema.org/BlogPosting">
-      <div class="bth bt3" style="background-image:url('https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=200&fit=crop');background-size:cover;background-position:center;">
-        <div class="bth-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
-        <span class="bcat">AI SEO</span>
-      </div>
-      <div class="bbd">
-        <div class="bmt"><span>Jan 5, 2026</span><span>7 min read</span></div>
-        <h2 class="btl" itemprop="headline">How to Get Featured in Google AI Overviews — A Step-by-Step 2026 Guide</h2>
-        <p class="bex">AI Overviews are reshaping organic click-through rates. Learn how to optimise your content to be featured and stay ahead as search evolves beyond traditional rankings.</p>
-        <a href="blog.html" class="brd">Read Article &rarr;</a>
-      </div>
-    </article>
-
-    <article class="bc rv fl" itemscope itemtype="https://schema.org/BlogPosting">
-      <div class="bth bt4" style="background-image:url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=200&fit=crop');background-size:cover;background-position:center;">
-        <div class="bth-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-        <span class="bcat">Local SEO</span>
-      </div>
-      <div class="bbd">
-        <div class="bmt"><span>Dec 28, 2025</span><span>5 min read</span></div>
-        <h2 class="btl" itemprop="headline">How to Rank in Google Maps: The 2026 Local SEO Playbook for Pakistani Businesses</h2>
-        <p class="bex">Local SEO is the fastest way to become visible to nearby customers. Our step-by-step guide to dominating the Google Maps 3-pack in your city.</p>
-        <a href="blog.html" class="brd">Read Article &rarr;</a>
-      </div>
-    </article>
-
-    <article class="bc rv" itemscope itemtype="https://schema.org/BlogPosting">
-      <div class="bth bt5" style="background-image:url('https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=200&fit=crop');background-size:cover;background-position:center;">
-        <div class="bth-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-        <span class="bcat">Keyword Research</span>
-      </div>
-      <div class="bbd">
-        <div class="bmt"><span>Dec 15, 2025</span><span>9 min read</span></div>
-        <h2 class="btl" itemprop="headline">Keyword Research in 2026: How to Find High-Intent Terms That Actually Convert</h2>
-        <p class="bex">Ranking for traffic is not enough — you need to rank for terms that bring buyers. This guide walks through our complete keyword research framework for maximum ROI.</p>
-        <a href="blog.html" class="brd">Read Article &rarr;</a>
-      </div>
-    </article>
-
-    <article class="bc rv fr" itemscope itemtype="https://schema.org/BlogPosting">
-      <div class="bth bt6" style="background-image:url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=200&fit=crop');background-size:cover;background-position:center;">
-        <div class="bth-ic"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
-        <span class="bcat">On-Page SEO</span>
-      </div>
-      <div class="bbd">
-        <div class="bmt"><span>Dec 5, 2025</span><span>6 min read</span></div>
-        <h2 class="btl" itemprop="headline">The On-Page SEO Checklist Every Pakistani Business Website Needs in 2026</h2>
-        <p class="bex">A fully optimised page does more than just rank — it converts. Run through our 30-point on-page SEO checklist to maximise both your visibility and your conversion rate.</p>
-        <a href="blog.html" class="brd">Read Article &rarr;</a>
-      </div>
-    </article>
-
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
+ <!-- TESTIMONIALS  -->
 <section id="testimonials">
   <div class="ttr">
     <div class="tsl act">
@@ -359,7 +284,8 @@ We keep communication clear and straightforward
       <div class="tdts" id="tcDots"></div>
     </div>
   </div>
-</section>
+</section> 
+
 
 <!-- CLIENTS -->
 <section id="clients" style="padding:80px 0px">

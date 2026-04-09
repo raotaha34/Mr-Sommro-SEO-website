@@ -3,26 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services | Mr. Sommro — SEO Agency</title>
+<title>Mr. Sommro | SEO Agency — Rank Higher</title>
 <link rel="icon" href="favicon.io.png" type="image/png">
 
-<meta name="description" content="Mr. Sommro SEO Services: Reddit Post Removal, Reputation Management, High Authority Backlinks, Reddit Traffic Growth, Link Building, eCommerce SEO, AI SEO, SEO Audits, and Reporting. 250+ clients. 95% success rate.">
-<meta name="keywords" content="SEO services Pakistan, Reddit removal, ORM, backlinks, Reddit growth, link building, eCommerce SEO, AI SEO, SEO agency Karachi">
+<meta name="description" content="Mr. Sommro is Pakistan's leading SEO agency. We deliver On-Page SEO, Technical SEO, Local SEO, Link Building and Content Marketing that generates real revenue. 250+ clients. 95% success rate.">
+<meta name="keywords" content="SEO agency Pakistan, On-Page SEO, Technical SEO, Link Building, Local SEO, Content Marketing, SEO services Karachi, Mr Sommro">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#0a0a0f">
-<link rel="canonical" href="https://www.mrsommro.com/services.html">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Mr. Sommro SEO Agency","description":"Comprehensive SEO services including Reddit marketing, reputation management, backlinks, and technical SEO.","url":"https://www.mrsommro.com/services.html","email":"info@mrsommro.com","telephone":"+92-300-123-4567","address":{"@type":"PostalAddress","addressLocality":"Karachi","addressCountry":"PK"}}</script>
+<link rel="canonical" href="https://www.mrsommro.com/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Mr. Sommro SEO Agency","description":"Expert SEO services — On-Page, Technical, Local, Link Building, Content Marketing.","url":"https://www.mrsommro.com","email":"info@mrsommro.com","telephone":"+92-300-123-4567","address":{"@type":"PostalAddress","addressLocality":"Karachi","addressCountry":"PK"}}</script>
 <link rel="stylesheet" href="style.css">
-<style>
-  /* Services page specific hero adjustments */
-  .services-hero { min-height: 70vh; }
-  .services-hero .hh1 { font-size: clamp(64px, 10vw, 140px); }
-</style>
+  <!-- EmailJS Library -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* Additional dark theme enhancements */
+  .hero-particles {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .hero-particles span {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: particle-float 15s infinite;
+    box-shadow: 0 0 10px var(--accent);
+  }
+  @keyframes particle-float {
+    0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+    10% { opacity: 0.3; }
+    90% { opacity: 0.3; }
+    100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+  }
+</style>
 </head>
 <body>
-<!-- MR SOMMRO Loader
+<!-- MR SOMMRO Loader -->
+ <!-- MR SOMMRO Loader -->
 <div id="loader">
   <div class="loader-inner">
     <div class="loader-circle">
@@ -30,74 +55,39 @@
     </div>
     <div class="loader-text">MR SOMMRO</div>
   </div>
-</div> -->
+</div>
+
+
 
 <div class="cursor-dot"></div>
 <div class="cursor-ring"></div>
 
 <!-- Mobile Nav -->
 <div class="mnav" id="mobNav">
-  <a href="index.html" onclick="closeMob()">Home</a>
-  <a href="index.html#about" onclick="closeMob()">About</a>
+  <a href="#hero"         onclick="closeMob()">Home</a>
+  <a href="#about"        onclick="closeMob()">About</a>
   <a href="services.html" onclick="closeMob()">Services</a>
-  <a href="index.html#process" onclick="closeMob()">Process</a>
-  <a href="index.html#blog" onclick="closeMob()">Blog</a>
-  <a href="index.html#testimonials" onclick="closeMob()">Reviews</a>
-  <a href="index.html#contact" onclick="closeMob()">Contact</a>
+  <a href="#process"      onclick="closeMob()">Process</a>
+  <a href="blog.html"         onclick="closeMob()">Blog</a>
+  <a href="#testimonials" onclick="closeMob()">Reviews</a>
+  <a href="#contact"      onclick="closeMob()">Contact</a>
 </div>
 
-<!-- Navigation -->
-<nav id="mainNav" itemscope itemtype="https://schema.org/SiteNavigationElement">
-  <div class="ncont">
-    <a href="index.html" class="nlogo" itemprop="url">
-      <span class="nl">MR.<span class="nlo">SOMMRO</span></span>
-    </a>
-    <div class="nlinks">
-      <a href="index.html" class="nlk" itemprop="url">Home</a>
-      <a href="index.html#about" class="nlk" itemprop="url">About</a>
-      <a href="services.html" class="nlk active" itemprop="url">Services</a>
-      <a href="index.html#process" class="nlk" itemprop="url">Process</a>
-      <a href="index.html#blog" class="nlk" itemprop="url">Blog</a>
-      <a href="index.html#testimonials" class="nlk" itemprop="url">Reviews</a>
-      <a href="index.html#contact" class="nlk" itemprop="url">Contact</a>
-    </div>
-    <div class="nbg" id="burger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
+<!-- NAVBAR -->
+<nav id="mainNav">
+<a href="#hero" class="nlogo">MR<span class="dot">.</span>SOMMRO<span class="tag">SEO</span></a>
+  <ul class="nlinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact" class="ncta">Free SEO Audit</a></li>
+  </ul>
+
+  <button class="nbg" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
-<!-- Hero Section -->
-<section class="hero services-hero" id="hero">
-  <div id="heroLines" aria-hidden="true"></div>
-  <div class="hblob" aria-hidden="true"></div>
-  <div class="hero-particles" aria-hidden="true" id="heroParticles"></div>
-  <div class="hero-container">
-    <div class="hcnt">
-      <div class="hpill">Professional SEO Services</div>
-      <h1 class="hh1">What We Do<br>Comprehensive SEO Solutions</h1>
-      <p class="hsub">Expert SEO services tailored to your business needs - from Reddit marketing to advanced AI SEO strategies.</p>
-      <div class="hacts">
-        <a href="#services" class="hbtn hbtn1">View Services</a>
-        <a href="index.html#contact" class="hbtn hbtn2">Get Free Audit</a>
-      </div>
-      <div class="hero-soc">
-        <a href="https://wa.me/923001234567" title="WhatsApp" target="_blank" rel="noopener" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
-        </a>
-        <a href="https://linkedin.com/in/mrsommro" title="LinkedIn" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-        </a>
-        <a href="https://instagram.com/mrsommro" title="Instagram" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="hscr" aria-hidden="true"><span>Scroll</span><div class="sbox"></div></div>
-</section>
 
 
 
@@ -227,7 +217,7 @@
       <div class="ftct">Company</div>
       <ul class="ftlk">
         <li><a href="index.html#about">About Us</a></li><li><a href="index.html#process">Our Process</a></li>
-        <li><a href="index.html#blog">SEO Blog</a></li><li><a href="index.html#testimonials">Client Reviews</a></li>
+        <li><a href="blog.html">SEO Blog</a></li><li><a href="index.html#testimonials">Client Reviews</a></li>
         <li><a href="index.html#clients">Our Clients</a></li><li><a href="index.html#contact">Contact</a></li>
       </ul>
     </div>
@@ -248,41 +238,115 @@
   </div>
 </footer>
 
-<!-- EmailJS Library (not used on services page but kept for consistency) -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-<script>
-// All scripts copied from index.html for full functionality (loader, cursor, nav, particles, etc.)
-// Initialize EmailJS (unused here)
+<script>// Initialize EmailJS
 emailjs.init("hnD6svOG9ul9LoBqK");
+
+// Handle Contact Form Submit
+document.getElementById("fSub").addEventListener("click", function(e){
+    e.preventDefault();
+
+    const btn = this;
+    const msgBox = document.getElementById("fMsg");
+
+    // Get form values
+    const data = {
+        first_name: document.getElementById("fn").value.trim(),
+        last_name: document.getElementById("ln").value.trim(),
+        email: document.getElementById("fe").value.trim(),
+        phone: document.getElementById("fp").value.trim(),
+        website: document.getElementById("fw").value.trim(),
+        service: document.getElementById("fs").value.trim(),
+        message: document.getElementById("fb2").value.trim()
+    };
+
+    // Validation
+    if(!data.first_name || !data.email || !data.message){
+        msgBox.style.display = "block";
+        msgBox.style.color = "red";
+        msgBox.textContent = "❌ Please fill all required fields.";
+        return;
+    }
+
+    // Show sending state
+    btn.disabled = true;
+    btn.querySelector("span").textContent = "Sending...";
+
+    // Send via EmailJS
+    emailjs.send("service_0vyg0cj", "template_3fdrhag", data)
+        .then(function(response){
+            msgBox.style.display = "block";
+            msgBox.style.color = "green";
+            msgBox.textContent = "✅ Message sent successfully!";
+
+            // Manually reset fields (cfWrap is a div)
+            document.getElementById("fn").value = '';
+            document.getElementById("ln").value = '';
+            document.getElementById("fe").value = '';
+            document.getElementById("fp").value = '';
+            document.getElementById("fw").value = '';
+            document.getElementById("fs").selectedIndex = 0;
+            document.getElementById("fb2").value = '';
+
+            // Reset button
+            btn.disabled = false;
+            btn.querySelector("span").textContent = "Send Message & Get Free Audit";
+        })
+        .catch(function(error){
+            console.error("EmailJS Error:", error);
+            msgBox.style.display = "block";
+            msgBox.style.color = "red";
+            msgBox.textContent = "❌ Failed to send. Try again.";
+
+            btn.disabled = false;
+            btn.querySelector("span").textContent = "Send Message & Get Free Audit";
+        });
+});
 
 // cursor
 const dot = document.querySelector('.cursor-dot');
 const ring = document.querySelector('.cursor-ring');
+
 let mouse = { x: 0, y: 0 };
 let ringPos = { x: 0, y: 0 };
-const ease = 0.15;
+const ease = 0.15; // smaller = slower, smoother lag
+
+// Track mouse instantly
 document.addEventListener('mousemove', e => {
   mouse.x = e.clientX;
   mouse.y = e.clientY;
+
+  // Move dot instantly
   dot.style.left = mouse.x + 'px';
   dot.style.top = mouse.y + 'px';
 });
+
+// Animate ring with easing
 function animate() {
   ringPos.x += (mouse.x - ringPos.x) * ease;
   ringPos.y += (mouse.y - ringPos.y) * ease;
+  
   ring.style.left = ringPos.x + 'px';
   ring.style.top = ringPos.y + 'px';
+  
   requestAnimationFrame(animate);
 }
+
 animate();
+
+// Optional: hover effect for links
 const links = document.querySelectorAll('a, button');
 links.forEach(link => {
   link.addEventListener('mouseenter', () => ring.classList.add('hover'));
   link.addEventListener('mouseleave', () => ring.classList.remove('hover'));
 });
 
-// NAV
+
+// Hover effect on interactive elements
+document.querySelectorAll('a, button').forEach(el => {
+  el.addEventListener('mouseenter', () => cursorRing.classList.add('hover'));
+  el.addEventListener('mouseleave', () => cursorRing.classList.remove('hover'));
+});
+/* NAV */
 window.addEventListener('scroll',()=>document.getElementById('mainNav').classList.toggle('scr',scrollY>60));
 function closeMob(){document.getElementById('mobNav').classList.remove('open')}
 document.getElementById('burger').addEventListener('click',function(){
@@ -290,7 +354,7 @@ document.getElementById('burger').addEventListener('click',function(){
   document.getElementById('mobNav').classList.toggle('open');
 });
 
-// HERO LINES & PARTICLES (kept for hero consistency)
+/* HERO LINES */
 const hl=document.getElementById('heroLines');
 hl.style.cssText='position:absolute;inset:0;display:flex;justify-content:space-between;pointer-events:none;z-index:1';
 for(let i=0;i<12;i++){
@@ -298,6 +362,8 @@ for(let i=0;i<12;i++){
   s.style.cssText='display:block;width:1px;background:linear-gradient(180deg,transparent,rgba(0,212,255,.08) 30%,rgba(0,212,255,.08) 70%,transparent)';
   hl.appendChild(s);
 }
+
+/* HERO PARTICLES */
 const particlesContainer=document.getElementById('heroParticles');
 for(let i=0;i<20;i++){
   const p=document.createElement('span');
@@ -307,7 +373,43 @@ for(let i=0;i<20;i++){
   particlesContainer.appendChild(p);
 }
 
-// SCROLL REVEAL
+/* MARQUEE */
+const words=['On-Page SEO','Technical SEO','Link Building','Local SEO','Content Marketing','eCommerce SEO','AI SEO and GEO','Keyword Research','SEO Audits','Domain Authority'];
+const mq=document.getElementById('mqTrack');
+[...words,...words,...words,...words].forEach(w=>{
+  const d=document.createElement('div');
+  d.className='mqi';
+  d.textContent=w;
+  mq.appendChild(d);
+});
+
+/* CLIENT LOGOS */
+const cls=['Google','Amazon','Netflix','Microsoft','LinkedIn','Apple','Twitter','YouTube','eBay','Instagram'];
+const ct=document.getElementById('clTrack');
+[...cls,...cls,...cls].forEach(n=>{
+  const el=document.createElement('div');
+  el.className='cll';
+  const logoUrls = {
+    'Google': 'google-removebg-preview.png',
+    'Amazon': 'amazon-removebg-preview.png',
+    'Netflix': 'Netflix-Logo-removebg-preview.png',
+    'Microsoft': 'microsoft-removebg-preview.png',
+    'LinkedIn': 'Linkedin-logo-tumb-removebg-preview.png',
+    'Apple': 'Apple-Logo-removebg-preview.png',
+    'Twitter': 'Twitter-Logo-thumb.png',
+    'YouTube': 'youtube-removebg-preview.png',
+    'eBay': 'ebay-removebg-preview.png',
+    'Instagram': 'instagram-removebg-preview.png'
+  };
+  if (logoUrls[n]) {
+    el.innerHTML = `<img src="${logoUrls[n]}" alt="${n}" style="width:100px;height:100px;object-fit:contain;background:transparent;">`;
+  } else {
+    el.textContent = n;
+  }
+  ct.appendChild(el);
+});
+
+/* SCROLL REVEAL */
 const obs=new IntersectionObserver(entries=>{
   entries.forEach((e,i)=>{
     if(e.isIntersecting){
@@ -318,9 +420,82 @@ const obs=new IntersectionObserver(entries=>{
 },{threshold:.1,rootMargin:'0px 0px -34px 0px'});
 document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
 
+/* STAT COUNTERS */
+function animN(el,tg,sf,dur=1800){
+  const s=performance.now();
+  (function t(now){
+    const p=Math.min((now-s)/dur,1);
+    const e2=1-Math.pow(1-p,3);
+    el.innerHTML=Math.round(tg*e2)+'<span>'+sf+'</span>';
+    if(p<1) requestAnimationFrame(t);
+  })(s);
+}
+const sObs=new IntersectionObserver(e=>{
+  if(e[0].isIntersecting){
+    document.querySelectorAll('[data-target]').forEach(el=>{
+      const t=parseInt(el.dataset.target),sp=el.querySelector('span')?.textContent||'';
+      animN(el,t,sp);
+    });
+    sObs.unobserve(e[0].target);
+  }
+},{threshold:.3});
+const sb=document.querySelector('.stbar'); if(sb) sObs.observe(sb);
 
+/* TESTIMONIALS */
+const slides=document.querySelectorAll('.tsl'); let cur=0;
+const dw=document.getElementById('tcDots');
+slides.forEach((_,i)=>{
+  const d=document.createElement('div');
+  d.className='tdt'+(i===0?' act':'');
+  d.addEventListener('click',()=>goTo(i));
+  dw.appendChild(d);
+});
+function goTo(n){
+  slides[cur].classList.remove('act');
+  document.querySelectorAll('.tdt')[cur].classList.remove('act');
+  cur=(n+slides.length)%slides.length;
+  slides[cur].classList.add('act');
+  document.querySelectorAll('.tdt')[cur].classList.add('act');
+}
+document.getElementById('tcPrev').addEventListener('click',()=>goTo(cur-1));
+document.getElementById('tcNext').addEventListener('click',()=>goTo(cur+1));
+setInterval(()=>goTo(cur+1),6000);
 
-// SMOOTH SCROLL
+/* EMAIL BAND */
+function handleEB(){
+  const v=document.getElementById('ebEmail').value.trim();
+  const m=document.getElementById('ebMsg');
+  if(!v){
+    m.style.cssText='display:block;color:#fff176';
+    m.textContent='Please enter your email or website URL.';
+    return;
+  }
+  m.style.cssText='display:block;color:#A5F3FC;font-weight:600';
+  m.textContent="Thank you. We will send your free SEO audit within 24 hours.";
+  document.getElementById('ebEmail').value='';
+}
+// loader 
+ // Hide loader after page fully loads
+  window.addEventListener("load", function() {
+    const loader = document.getElementById('loader');
+    setTimeout(() => {
+        loader.style.opacity = '0';
+        loader.style.transition = 'opacity 0.5s ease';
+        setTimeout(() => loader.style.display = 'none', 500);
+    }, 1000); // loader stays visible for 5 seconds
+});
+
+    setTimeout(() => {
+    const loader = document.getElementById('loader');
+    loader.style.opacity = '0';
+    loader.style.transition = 'opacity 0.5s ease';
+    setTimeout(()=> loader.style.display = 'none', 500);
+  }, 1000); // 3000ms = 3 seconds
+
+/* SELECT FIX */
+document.getElementById('fs').addEventListener('change',function(){this.classList.add('fl')});
+
+/* SMOOTH SCROLL */
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click',e=>{
     const t=document.querySelector(a.getAttribute('href'));
