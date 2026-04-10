@@ -788,7 +788,7 @@ section{padding:120px 60px}
   margin:0 auto;
   border-radius:12px;
   overflow:hidden;
-  background:var(--bg-glass);
+  background: rgb(255 255 255);
   border:1px solid var(--glass-border);
   backdrop-filter:blur(20px);
   box-shadow:0 20px 60px rgba(0,0,0,0.3);
@@ -803,7 +803,7 @@ section{padding:120px 60px}
   color:var(--T);
   background:transparent;
 }
-.ebinp::placeholder{color:var(--T-muted)}
+.ebinp::placeholder{color:#000000}
 .ebbtn{
   padding:18px 32px;
   background:linear-gradient(135deg,var(--B),var(--accent));
