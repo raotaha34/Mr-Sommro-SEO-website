@@ -1,606 +1,681 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mr. Soomro | SEO Services - Professional SEO Solutions</title>
-<link rel="icon" href="favicon.io.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. Soomro | SEO Services - Professional SEO Solutions</title>
+  <link rel="icon" href="favicon.io.png" type="image/png">
 
-<meta name="description" content="Explore our comprehensive SEO services including Reddit Post Removal, Reputation Management, High Authority Backlinks, Reddit Traffic Growth, Link Building, eCommerce SEO, AI SEO, SEO Audits, and Reporting.">
-<meta name="keywords" content="SEO services, Reddit removal, reputation management, backlinks, link building, eCommerce SEO, AI SEO, SEO audits">
-<meta name="robots" content="index,follow">
-<meta name="theme-color" content="#0a0a0a">
-<link rel="canonical" href="https://www.mrSoomro.com/services.html">
+  <meta name="description"
+    content="Explore our comprehensive SEO services including Reddit Post Removal, Reputation Management, High Authority Backlinks, Reddit Traffic Growth, Link Building, eCommerce SEO, AI SEO, SEO Audits, and Reporting.">
+  <meta name="keywords"
+    content="SEO services, Reddit removal, reputation management, backlinks, link building, eCommerce SEO, AI SEO, SEO audits">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://www.mrSoomro.com/services.html">
 
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<style>
-  /* Services Page Styles */
-  body {
-    font-family: 'Outfit', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #0a0a0a;
-    color: #ffffff;
-    line-height: 1.7;
-  }
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Services Page Styles */
+    body {
+      font-family: 'Outfit', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0a0a0a;
+      color: #ffffff;
+      line-height: 1.7;
+    }
 
-  a { 
-    text-decoration: none; 
-    color: #FFA500; 
-    transition: all 0.3s;
-  }
-  
-  a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 10px rgba(255,165,0,0.5);
-  }
+    a {
+      text-decoration: none;
+      color: #60a5fa;
+      transition: all 0.3s;
+    }
 
-  h1, h2, h3 {
-    font-family: 'Bebas Neue', cursive;
-    margin: 0.5em 0;
-    letter-spacing: 0.02em;
-  }
+    a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
+    }
 
-  h2 { font-size: 2.2rem; }
-  h3 { font-size: 1.6rem; }
+    h1,
+    h2,
+    h3 {
+      font-family: 'Bebas Neue', cursive;
+      margin: 0.5em 0;
+      letter-spacing: 0.02em;
+    }
 
-  /* Reveal Animation */
-  .rv {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-  }
-  .rv.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    h2 {
+      font-size: 2.2rem;
+    }
 
-  /* Page Header */
-  .page-header {
-    padding: 140px 60px 60px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    background: var(--bg-dark, #0a0a0a);
-  }
+    h3 {
+      font-size: 1.6rem;
+    }
 
-  .page-header::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-      radial-gradient(ellipse at 20% 20%, rgba(255,215,0,0.08) 0%, transparent 50%),
-      radial-gradient(ellipse at 80% 80%, rgba(255,165,0,0.05) 0%, transparent 50%);
-    pointer-events: none;
-  }
+    /* Reveal Animation */
+    .rv {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
 
-  .page-header .se {
-    color: #FFD700;
-    letter-spacing: 2px;
-    font-weight: 600;
-    font-size: 1rem;
-    text-transform: uppercase;
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 16px;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .page-header .se::before {
-    content: '';
-    display: block;
-    width: 30px;
-    height: 2px;
-    background: linear-gradient(90deg, #FFD700, #FFA500);
-    border-radius: 2px;
-  }
+    .rv.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-  .page-header h1 {
-    font-size: clamp(3rem, 8vw, 5rem);
-    margin-top: 10px;
-    line-height: 1.1;
-    background: linear-gradient(135deg, #ffffff 0%, #FFD700 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    position: relative;
-    z-index: 1;
-  }
-
-  .page-header p {
-    max-width: 600px;
-    margin: 20px auto 0;
-    color: rgba(255,255,255,0.7);
-    font-size: 1.1rem;
-    position: relative;
-    z-index: 1;
-  }
-
-  /* Services Grid */
-  .services-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 80px 60px;
-  }
-
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
-  }
-
-  .service-card {
-    background: rgba(26,26,26,0.6);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 20px;
-    padding: 40px;
-    position: relative;
-    transition: all 0.4s ease;
-    overflow: hidden;
-  }
-
-  .service-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #FFD700, #FFA500);
-    transform: scaleX(0);
-    transition: transform 0.4s ease;
-  }
-
-  .service-card:hover {
-    transform: translateY(-8px);
-    border-color: rgba(255,215,0,0.3);
-    box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 40px rgba(255,215,0,0.1);
-  }
-
-  .service-card:hover::before {
-    transform: scaleX(1);
-  }
-
-  .service-number {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 3rem;
-    color: rgba(255,215,0,0.2);
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    line-height: 1;
-  }
-
-  .service-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 16px;
-    background: rgba(255,215,0,0.1);
-    border: 1px solid rgba(255,215,0,0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 24px;
-  }
-
-  .service-icon svg {
-    width: 28px;
-    height: 28px;
-    stroke: #FFD700;
-    fill: none;
-    stroke-width: 1.5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
-
-  .service-card h3 {
-    font-size: 1.5rem;
-    color: #ffffff;
-    margin-bottom: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  .service-card p {
-    color: rgba(255,255,255,0.7);
-    font-size: 0.95rem;
-    line-height: 1.8;
-    margin-bottom: 24px;
-  }
-
-  .service-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: #FFD700;
-    font-weight: 600;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-  }
-
-  .service-link:hover {
-    gap: 12px;
-    color: #FFA500;
-  }
-
-  /* CTA Section */
-  .services-cta {
-    background: linear-gradient(135deg, rgba(255,215,0,0.05) 0%, rgba(255,165,0,0.03) 100%);
-    padding: 100px 60px;
-    text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.08);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-  }
-
-  .services-cta h2 {
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    margin-bottom: 20px;
-  }
-
-  .services-cta h2 em {
-    color: #FFD700;
-    font-style: normal;
-  }
-
-  .services-cta p {
-    color: rgba(255,255,255,0.7);
-    max-width: 500px;
-    margin: 0 auto 40px;
-    font-size: 1.1rem;
-  }
-
-  .cta-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-    color: #0a0a0a;
-    padding: 18px 40px;
-    border-radius: 50px;
-    font-weight: 700;
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(255,215,0,0.3);
-  }
-
-  .cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(255,215,0,0.4);
-    color: #0a0a0a;
-    text-shadow: none;
-  }
-
-  /* Responsive */
-  @media (max-width: 768px) {
+    /* Page Header */
     .page-header {
-      padding: 120px 24px 40px;
+      padding: 140px 60px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg-dark, #0a0a0a);
     }
-    
+
+    .page-header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 20%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(37, 99, 235, 0.05) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .page-header .se {
+      color: #3b82f6;
+      letter-spacing: 2px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .page-header .se::before {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 2px;
+      background: linear-gradient(90deg, #3b82f6, #60a5fa);
+      border-radius: 2px;
+    }
+
+    .page-header h1 {
+      font-size: clamp(3rem, 8vw, 5rem);
+      margin-top: 10px;
+      line-height: 1.1;
+      background: linear-gradient(135deg, #ffffff 0%, #3b82f6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      position: relative;
+      z-index: 1;
+    }
+
+    .page-header p {
+      max-width: 600px;
+      margin: 20px auto 0;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1.1rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Services Grid */
     .services-container {
-      padding: 60px 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 60px;
     }
-    
+
     .services-grid {
-      grid-template-columns: 1fr;
-      gap: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
     }
-    
+
     .service-card {
-      padding: 30px;
+      background: rgba(26, 26, 26, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 40px;
+      position: relative;
+      transition: all 0.4s ease;
+      overflow: hidden;
     }
-    
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #3b82f6, #60a5fa);
+      transform: scaleX(0);
+      transition: transform 0.4s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(59, 130, 246, 0.3);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 40px rgba(59, 130, 246, 0.1);
+    }
+
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .service-number {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 3rem;
+      color: rgba(59, 130, 246, 0.2);
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      line-height: 1;
+    }
+
+    .service-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 16px;
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .service-icon svg {
+      width: 28px;
+      height: 28px;
+      stroke: #3b82f6;
+      fill: none;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .service-card h3 {
+      font-size: 1.5rem;
+      color: #ffffff;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .service-card p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #3b82f6;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+
+    .service-link:hover {
+      gap: 12px;
+      color: #60a5fa;
+    }
+
+    /* CTA Section */
     .services-cta {
-      padding: 80px 24px;
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(37, 99, 235, 0.03) 100%);
+      padding: 100px 60px;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
-  }
-</style>
+
+    .services-cta h2 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      margin-bottom: 20px;
+    }
+
+    .services-cta h2 em {
+      color: #3b82f6;
+      font-style: normal;
+    }
+
+    .services-cta p {
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 500px;
+      margin: 0 auto 40px;
+      font-size: 1.1rem;
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+      color: #0a0a0a;
+      padding: 18px 40px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(59, 130, 246, 0.4);
+      color: #0a0a0a;
+      text-shadow: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .page-header {
+        padding: 120px 24px 40px;
+      }
+
+      .services-container {
+        padding: 60px 24px;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .service-card {
+        padding: 30px;
+      }
+
+      .services-cta {
+        padding: 80px 24px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- LOADER -->
-<div id="loader">
-  <div class="loader-inner">
-    <div class="loader-circle">
-      <span class="loader-ms">MS</span>
-    </div>
-    <div class="loader-text">MR Soomro</div>
-  </div>
-</div>
-
-<!-- CURSOR -->
-<div class="cursor-dot"></div>
-<div class="cursor-ring"></div>
-
-<!-- MOBILE MENU -->
-<div id="mobMenu" style="position:fixed;inset:0;background:rgba(10,10,10,0.98);z-index:600;display:none;flex-direction:column;align-items:center;justify-content:center;gap:30px">
-  <a href="index.html" onclick="closeMob()">Home</a>
-  <a href="services.html" onclick="closeMob()">Services</a>
-  <a href="blogs.html" onclick="closeMob()">Blog</a>
-  <a href="index.html#about" onclick="closeMob()">About</a>
-  <a href="index.html#contact" onclick="closeMob()">Contact</a>
-</div>
-
-<!-- NAVBAR -->
-<nav id="mainNav">
-  <a href="index.html" class="nlogo">MR<span class="dot">.</span>Soomro<span class="tag">SEO</span></a>
-  <ul class="nlinks">
-    <li><a href="index.html#about">About</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="blogs.html">Blog</a></li>
-    <li><a href="index.html#testimonials">Reviews</a></li>
-    <li><a href="index.html#contact" class="ncta">Free SEO Audit</a></li>
-  </ul>
-  <button class="nbg" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
-</nav>
-
-<!-- PAGE HEADER -->
-<section class="page-header">
-  <div class="se">What We Offer</div>
-  <h1>Our SEO <em>Services</em></h1>
-  <p>Comprehensive, customised SEO solutions built around your business goals — not generic templates.</p>
-</section>
-
-<!-- SERVICES GRID -->
-<div class="services-container">
-  <div class="services-grid">
-    
-    <!-- Service 1 -->
-    <article class="service-card rv" itemscope itemtype="https://schema.org/Service">
-      <span class="service-number">01</span>
-      <div class="service-icon">
-        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-circle">
+        <span class="loader-ms">MS</span>
       </div>
-      <h3 itemprop="name">Reddit Post Removal & Deindexing</h3>
-      <p itemprop="description">Remove or suppress harmful Reddit content to protect your brand visibility. We use advanced techniques to deindex negative posts and restore your online reputation.</p>
-      <a href="index.html#contact" class="service-link">Get Started &rarr;</a>
-    </article>
-
-    <!-- Service 2 -->
-    <article class="service-card rv" itemscope itemtype="https://schema.org/Service">
-      <span class="service-number">02</span>
-      <div class="service-icon">
-        <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-      </div>
-      <h3 itemprop="name">Reputation Management (ORM)</h3>
-      <p itemprop="description">Improve and control your online reputation by promoting positive search results. We suppress negative content and strengthen your brand image with strategic SEO and content placement.</p>
-      <a href="index.html#contact" class="service-link">Get Started &rarr;</a>
-    </article>
-
-    <!-- Service 3 -->
-    <article class="service-card rv" itemscope itemtype="https://schema.org/Service">
-      <span class="service-number">03</span>
-      <div class="service-icon">
-        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-      </div>
-      <h3 itemprop="name">High Authority Backlinks</h3>
-      <p itemprop="description">Build strong backlinks from trusted, high-authority websites to boost your rankings. This increases domain credibility and drives consistent organic traffic.</p>
-      <a href="index.html#contact" class="service-link">Get Started &rarr;</a>
-    </article>
-
-    <!-- Service 4 -->
-    <article class="service-card rv" itemscope itemtype="https://schema.org/Service">
-      <span class="service-number">04</span>
-      <div class="service-icon">
-        <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-      </div>
-      <h3 itemprop="name">Reddit Traffic Growth</h3>
-      <p itemprop="description">Drive targeted traffic from Reddit through strategic posting and community engagement. We focus on relevant subreddits to generate authentic users and higher conversions.</p>
-      <a href="index.html#contact" class="service-link">Get Started &rarr;</a>
-    </article>
-
-    <!-- Service 5 -->
-    <article class="service-card rv" itemscope itemtype="https://schema.org/Service">
-      <span class="service-number">05</span>
-      <div class="service-icon">
-        <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
-      </div>
-      <h3 itemprop="name">Link Building</h3>
-      <p itemprop="description">Build a powerful white-hat backlink profile with high-DA editorial links, niche guest posts, digital PR campaigns and competitor link-gap analysis that sustainably boosts your domain authority.</p>
-      <a href="index.html#contact" class="service-link">Get Started &rarr;</a>
-    </article>
-
-    <!-- Service 6 -->
-    <article class="service-card rv" itemscope itemtype="https://schema.org/Service">
-      <span class="service-number">06</span>
-      <div class="service-icon">
-        <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
-      </div>
-      <h3 itemprop="name">eCommerce SEO</h3>
-      <p itemprop="description">Specialised SEO for Shopify, WooCommerce and Magento stores. We optimise product pages, category architecture, structured data and site performance to turn organic traffic directly into sales and revenue.</p>
-      <a href="index.html#contact" class="service-link">Get Started &rarr;</a>
-    </article>
-
-    <!-- Service 7 -->
-    <article class="service-card rv" itemscope itemtype="https://schema.org/Service">
-      <span class="service-number">07</span>
-      <div class="service-icon">
-        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 110 20 10 10 0 010-20z"/><path d="M12 6v6l4 2"/></svg>
-      </div>
-      <h3 itemprop="name">AI SEO & GEO</h3>
-      <p itemprop="description">Future-proof your visibility. We optimise your content to appear in Google AI Overviews, ChatGPT, Perplexity and voice search results — going beyond traditional SEO to reach users wherever they search in 2026.</p>
-      <a href="index.html#contact" class="service-link">Get Started &rarr;</a>
-    </article>
-
-    <!-- Service 8 -->
-    <article class="service-card rv" itemscope itemtype="https://schema.org/Service">
-      <span class="service-number">08</span>
-      <div class="service-icon">
-        <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-      </div>
-      <h3 itemprop="name">SEO Audits & Strategy</h3>
-      <p itemprop="description">A comprehensive 150-point SEO audit covering technical issues, on-page quality, backlink profile, keyword gaps and competitor analysis — delivered with a prioritised, actionable roadmap and clear quick wins.</p>
-      <a href="index.html#contact" class="service-link">Get Started &rarr;</a>
-    </article>
-
-    <!-- Service 9 -->
-    <article class="service-card rv" itemscope itemtype="https://schema.org/Service">
-      <span class="service-number">09</span>
-      <div class="service-icon">
-        <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-      </div>
-      <h3 itemprop="name">SEO Reporting & Analytics</h3>
-      <p itemprop="description">Monthly dashboards with full transparency — GA4 setup, Search Console insights, rank tracking, organic traffic trends, conversion attribution and ROI calculation — so you always know exactly what your investment is delivering.</p>
-      <a href="index.html#contact" class="service-link">Get Started &rarr;</a>
-    </article>
-
-  </div>
-</div>
-
-<!-- CTA SECTION -->
-<section class="services-cta">
-  <h2>Ready to <em>Grow</em> Your Business?</h2>
-  <p>Get a free SEO audit and discover how we can help you rank higher and attract more customers.</p>
-  <a href="index.html#contact" class="cta-button">Get Free SEO Audit &rarr;</a>
-</section>
-
-<!-- FOOTER -->
-<footer itemscope itemtype="https://schema.org/Organization">
-  <div class="ftt">
-    <div>
-      <span class="ftlo" itemprop="name">MR.<span>Soomro</span></span>
-      <p class="fttg" itemprop="description">Pakistan's trusted SEO agency helping businesses rank higher, attract more clients and grow sustainably with data-driven search strategies since 2016.</p>
-      <div class="ft-soc-row">
-        <a href="https://wa.me/923001234567" title="WhatsApp" target="_blank" rel="noopener" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
-        </a>
-        <a href="https://linkedin.com/in/mrSoomro" title="LinkedIn" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-        </a>
-        <a href="https://instagram.com/mrSoomro" title="Instagram" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-        </a>
-        <a href="mailto:info@mrSoomro.com" title="Email" aria-label="Email">
-          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </a>
-      </div>
-    </div>
-    <div>
-      <div class="ftct">Quick Links</div>
-      <ul class="ftlk">
-        <li><a href="services.html">Services</a></li>
-        <li><a href="index.html#about">About Us</a></li>
-        <li><a href="blogs.html">Blog</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="ftct">Contact</div>
-      <ul class="ftlk">
-        <li><a href="mailto:info@mrSoomro.com">info@mrSoomro.com</a></li>
-        <li><a href="tel:+923001234567">+92 300 123 4567</a></li>
-        <li><a href="https://wa.me/923001234567">WhatsApp</a></li>
-        <li style="color:rgba(255,255,255,.28);font-size:13px;font-weight:300">Karachi, Pakistan</li>
-      </ul>
+      <div class="loader-text">MR Soomro</div>
     </div>
   </div>
-  <div class="ftbt">
-    <div class="ftcp">© 2026 <a href="index.html">Mr. Soomro SEO Agency</a>. All rights reserved.</div>
-    <div class="ftbl"><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Mobile Nav -->
+  <div class="mnav" id="mobNav">
+    <a href="index.html#hero" onclick="closeMob()">Home</a>
+    <a href="index.html#about" onclick="closeMob()">About</a>
+    <a href="services.html" onclick="closeMob()">Services</a>
+    <a href="index.html#process" onclick="closeMob()">Process</a>
+    <a href="blogs.html" onclick="closeMob()">Blog</a>
+    <a href="index.html#testimonials" onclick="closeMob()">Reviews</a>
+    <a href="index.html#contact" onclick="closeMob()">Contact</a>
   </div>
-</footer>
 
-<script>
-// Mobile menu
-const burger = document.getElementById('burger');
-const mobMenu = document.getElementById('mobMenu');
+  <!-- NAVBAR -->
+  <nav id="mainNav">
+    <a href="index.html" class="nlogo">MR<span class="dot">.</span>Soomro<span class="tag">SEO</span></a>
+    <ul class="nlinks">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="blogs.html">Blog</a></li>
+      <li><a href="index.html#testimonials">Reviews</a></li>
+      <li><a href="index.html#contact" class="ncta">Free SEO Audit</a></li>
+    </ul>
+    <button class="nbg" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
 
-burger.addEventListener('click', () => {
-  mobMenu.style.display = mobMenu.style.display === 'flex' ? 'none' : 'flex';
-});
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="se">What We Offer</div>
+    <h1>Our SEO <em>Services</em></h1>
+    <p>Comprehensive, customised SEO solutions built around your business goals — not generic templates.</p>
+  </section>
 
-function closeMob() {
-  mobMenu.style.display = 'none';
-}
+  <!-- SERVICES GRID -->
+  <div class="services-container">
+    <div class="services-grid">
 
-// Scroll reveal
-const obs = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
+      <!-- Service 1 -->
+      <article class="service-card rv" itemscope itemtype="https://schema.org/Service">
+        <span class="service-number">01</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+        </div>
+        <h3 itemprop="name">Reddit Post Removal & Deindexing</h3>
+        <p itemprop="description">Remove or suppress harmful Reddit content to protect your brand visibility. We use
+          advanced techniques to deindex negative posts and restore your online reputation.</p>
+        <a href="index.html#contact" class="service-link">Get Started &rarr;</a>
+      </article>
+
+      <!-- Service 2 -->
+      <article class="service-card rv" itemscope itemtype="https://schema.org/Service">
+        <span class="service-number">02</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24">
+            <polyline points="16 18 22 12 16 6" />
+            <polyline points="8 6 2 12 8 18" />
+          </svg>
+        </div>
+        <h3 itemprop="name">Reputation Management (ORM)</h3>
+        <p itemprop="description">Improve and control your online reputation by promoting positive search results. We
+          suppress negative content and strengthen your brand image with strategic SEO and content placement.</p>
+        <a href="index.html#contact" class="service-link">Get Started &rarr;</a>
+      </article>
+
+      <!-- Service 3 -->
+      <article class="service-card rv" itemscope itemtype="https://schema.org/Service">
+        <span class="service-number">03</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+        </div>
+        <h3 itemprop="name">High Authority Backlinks</h3>
+        <p itemprop="description">Build strong backlinks from trusted, high-authority websites to boost your rankings.
+          This increases domain credibility and drives consistent organic traffic.</p>
+        <a href="index.html#contact" class="service-link">Get Started &rarr;</a>
+      </article>
+
+      <!-- Service 4 -->
+      <article class="service-card rv" itemscope itemtype="https://schema.org/Service">
+        <span class="service-number">04</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 20h9" />
+            <path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
+          </svg>
+        </div>
+        <h3 itemprop="name">Reddit Traffic Growth</h3>
+        <p itemprop="description">Drive targeted traffic from Reddit through strategic posting and community engagement.
+          We focus on relevant subreddits to generate authentic users and higher conversions.</p>
+        <a href="index.html#contact" class="service-link">Get Started &rarr;</a>
+      </article>
+
+      <!-- Service 5 -->
+      <article class="service-card rv" itemscope itemtype="https://schema.org/Service">
+        <span class="service-number">05</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" />
+            <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" />
+          </svg>
+        </div>
+        <h3 itemprop="name">Link Building</h3>
+        <p itemprop="description">Build a powerful white-hat backlink profile with high-DA editorial links, niche guest
+          posts, digital PR campaigns and competitor link-gap analysis that sustainably boosts your domain authority.
+        </p>
+        <a href="index.html#contact" class="service-link">Get Started &rarr;</a>
+      </article>
+
+      <!-- Service 6 -->
+      <article class="service-card rv" itemscope itemtype="https://schema.org/Service">
+        <span class="service-number">06</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24">
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" />
+          </svg>
+        </div>
+        <h3 itemprop="name">eCommerce SEO</h3>
+        <p itemprop="description">Specialised SEO for Shopify, WooCommerce and Magento stores. We optimise product
+          pages, category architecture, structured data and site performance to turn organic traffic directly into sales
+          and revenue.</p>
+        <a href="index.html#contact" class="service-link">Get Started &rarr;</a>
+      </article>
+
+      <!-- Service 7 -->
+      <article class="service-card rv" itemscope itemtype="https://schema.org/Service">
+        <span class="service-number">07</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2a10 10 0 110 20 10 10 0 010-20z" />
+            <path d="M12 6v6l4 2" />
+          </svg>
+        </div>
+        <h3 itemprop="name">AI SEO & GEO</h3>
+        <p itemprop="description">Future-proof your visibility. We optimise your content to appear in Google AI
+          Overviews, ChatGPT, Perplexity and voice search results — going beyond traditional SEO to reach users wherever
+          they search in 2026.</p>
+        <a href="index.html#contact" class="service-link">Get Started &rarr;</a>
+      </article>
+
+      <!-- Service 8 -->
+      <article class="service-card rv" itemscope itemtype="https://schema.org/Service">
+        <span class="service-number">08</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M9 11l3 3L22 4" />
+            <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+          </svg>
+        </div>
+        <h3 itemprop="name">SEO Audits & Strategy</h3>
+        <p itemprop="description">A comprehensive 150-point SEO audit covering technical issues, on-page quality,
+          backlink profile, keyword gaps and competitor analysis — delivered with a prioritised, actionable roadmap and
+          clear quick wins.</p>
+        <a href="index.html#contact" class="service-link">Get Started &rarr;</a>
+      </article>
+
+      <!-- Service 9 -->
+      <article class="service-card rv" itemscope itemtype="https://schema.org/Service">
+        <span class="service-number">09</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24">
+            <line x1="18" y1="20" x2="18" y2="10" />
+            <line x1="12" y1="20" x2="12" y2="4" />
+            <line x1="6" y1="20" x2="6" y2="14" />
+          </svg>
+        </div>
+        <h3 itemprop="name">SEO Reporting & Analytics</h3>
+        <p itemprop="description">Monthly dashboards with full transparency — GA4 setup, Search Console insights, rank
+          tracking, organic traffic trends, conversion attribution and ROI calculation — so you always know exactly what
+          your investment is delivering.</p>
+        <a href="index.html#contact" class="service-link">Get Started &rarr;</a>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- CTA SECTION -->
+  <section class="services-cta">
+    <h2>Ready to <em>Grow</em> Your Business?</h2>
+    <p>Get a free SEO audit and discover how we can help you rank higher and attract more customers.</p>
+    <a href="index.html#contact" class="cta-button">Get Free SEO Audit &rarr;</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer itemscope itemtype="https://schema.org/Organization">
+    <div class="ftt">
+      <div>
+        <span class="ftlo" itemprop="name">MR.<span>Soomro</span></span>
+        <p class="fttg" itemprop="description">Pakistan's trusted SEO agency helping businesses rank higher, attract
+          more clients and grow sustainably with data-driven search strategies since 2016.</p>
+        <div class="ft-soc-row">
+          <a href="https://wa.me/923001234567" title="WhatsApp" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/mrSoomro" title="LinkedIn" target="_blank" rel="noopener"
+            aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="https://instagram.com/mrSoomro" title="Instagram" target="_blank" rel="noopener"
+            aria-label="Instagram">
+            <svg viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+          <a href="mailto:info@mrSoomro.com" title="Email" aria-label="Email">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="ftct">Quick Links</div>
+        <ul class="ftlk">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="blogs.html">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ftct">Contact</div>
+        <ul class="ftlk">
+          <li><a href="mailto:info@mrSoomro.com">info@mrSoomro.com</a></li>
+          <li><a href="tel:+923001234567">+92 300 123 4567</a></li>
+          <li><a href="https://wa.me/923001234567">WhatsApp</a></li>
+          <li style="color:rgba(255,255,255,.28);font-size:13px;font-weight:300">Karachi, Pakistan</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftbt">
+      <div class="ftcp">© 2026 <a href="index.html">Mr. Soomro SEO Agency</a>. All rights reserved.</div>
+      <div class="ftbl"><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const burger = document.getElementById('burger');
+    function closeMob() {
+      document.getElementById('mobNav').classList.remove('open');
     }
-  });
-}, { threshold: .1, rootMargin: '0px 0px -34px 0px' });
 
-document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+    document.getElementById('burger').addEventListener('click', function () {
+      this.classList.toggle('open');
+      document.getElementById('mobNav').classList.toggle('open');
+    });
 
-// Loader
-window.addEventListener("load", function() {
-  const loader = document.getElementById('loader');
-  setTimeout(() => {
-    loader.style.opacity = '0';
-    loader.style.transition = 'opacity 0.5s ease';
-    setTimeout(() => loader.style.display = 'none', 500);
-  }, 1000);
-});
+    // Scroll reveal
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: .1, rootMargin: '0px 0px -34px 0px' });
 
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const t = document.querySelector(a.getAttribute('href'));
-    if (t) {
-      e.preventDefault();
-      t.scrollIntoView({ behavior: 'smooth' });
+    document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+
+    // Loader
+    window.addEventListener("load", function () {
+      const loader = document.getElementById('loader');
+      setTimeout(() => {
+        loader.style.opacity = '0';
+        loader.style.transition = 'opacity 0.5s ease';
+        setTimeout(() => loader.style.display = 'none', 500);
+      }, 1000);
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) {
+          e.preventDefault();
+          t.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // cursor - Premium Gold Glow Edition
+    const dot = document.querySelector('.cursor-dot');
+    const ring = document.querySelector('.cursor-ring');
+
+    if (dot && ring && window.matchMedia('(hover: hover)').matches) {
+      let mouse = { x: 0, y: 0 };
+      let ringPos = { x: 0, y: 0 };
+      const ease = 0.12;
+
+      document.addEventListener('mousemove', e => {
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
+        dot.style.left = mouse.x + 'px';
+        dot.style.top = mouse.y + 'px';
+      });
+
+      function animate() {
+        ringPos.x += (mouse.x - ringPos.x) * ease;
+        ringPos.y += (mouse.y - ringPos.y) * ease;
+        ring.style.left = ringPos.x + 'px';
+        ring.style.top = ringPos.y + 'px';
+        requestAnimationFrame(animate);
+      }
+      animate();
+
+      // Hover effects for interactive elements
+      const interactiveElements = document.querySelectorAll('a, button, input, textarea, select, [role="button"]');
+      interactiveElements.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          ring.classList.add('hover');
+          dot.classList.add('hover');
+        });
+        el.addEventListener('mouseleave', () => {
+          ring.classList.remove('hover');
+          dot.classList.remove('hover');
+        });
+      });
+
+      // Click effects
+      document.addEventListener('mousedown', () => {
+        dot.classList.add('clicking');
+        ring.classList.add('clicking');
+      });
+
+      document.addEventListener('mouseup', () => {
+        dot.classList.remove('clicking');
+        ring.classList.remove('clicking');
+      });
     }
-  });
-});
-
-// cursor - Premium Gold Glow Edition
-const dot = document.querySelector('.cursor-dot');
-const ring = document.querySelector('.cursor-ring');
-
-if (dot && ring && window.matchMedia('(hover: hover)').matches) {
-  let mouse = { x: 0, y: 0 };
-  let ringPos = { x: 0, y: 0 };
-  const ease = 0.12;
-
-  document.addEventListener('mousemove', e => {
-    mouse.x = e.clientX;
-    mouse.y = e.clientY;
-    dot.style.left = mouse.x + 'px';
-    dot.style.top = mouse.y + 'px';
-  });
-
-  function animate() {
-    ringPos.x += (mouse.x - ringPos.x) * ease;
-    ringPos.y += (mouse.y - ringPos.y) * ease;
-    ring.style.left = ringPos.x + 'px';
-    ring.style.top = ringPos.y + 'px';
-    requestAnimationFrame(animate);
-  }
-  animate();
-
-  // Hover effects for interactive elements
-  const interactiveElements = document.querySelectorAll('a, button, input, textarea, select, [role="button"]');
-  interactiveElements.forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      ring.classList.add('hover');
-      dot.classList.add('hover');
-    });
-    el.addEventListener('mouseleave', () => {
-      ring.classList.remove('hover');
-      dot.classList.remove('hover');
-    });
-  });
-
-  // Click effects
-  document.addEventListener('mousedown', () => {
-    dot.classList.add('clicking');
-    ring.classList.add('clicking');
-  });
-
-  document.addEventListener('mouseup', () => {
-    dot.classList.remove('clicking');
-    ring.classList.remove('clicking');
-  });
-}
-</script>
+  </script>
 
 </body>
+
 </html>
